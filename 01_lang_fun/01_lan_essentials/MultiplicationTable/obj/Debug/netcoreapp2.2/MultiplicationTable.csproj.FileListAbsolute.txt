@@ -1,0 +1,11 @@
+/Users/alex/Desktop/01_coding_dojo/04_C#/01_lang_fun/01_lan_essentials/MultiplicationTable/bin/Debug/netcoreapp2.2/MultiplicationTable.deps.json
+/Users/alex/Desktop/01_coding_dojo/04_C#/01_lang_fun/01_lan_essentials/MultiplicationTable/bin/Debug/netcoreapp2.2/MultiplicationTable.runtimeconfig.json
+/Users/alex/Desktop/01_coding_dojo/04_C#/01_lang_fun/01_lan_essentials/MultiplicationTable/bin/Debug/netcoreapp2.2/MultiplicationTable.runtimeconfig.dev.json
+/Users/alex/Desktop/01_coding_dojo/04_C#/01_lang_fun/01_lan_essentials/MultiplicationTable/bin/Debug/netcoreapp2.2/MultiplicationTable.dll
+/Users/alex/Desktop/01_coding_dojo/04_C#/01_lang_fun/01_lan_essentials/MultiplicationTable/bin/Debug/netcoreapp2.2/MultiplicationTable.pdb
+/Users/alex/Desktop/01_coding_dojo/04_C#/01_lang_fun/01_lan_essentials/MultiplicationTable/obj/Debug/netcoreapp2.2/MultiplicationTable.csprojAssemblyReference.cache
+/Users/alex/Desktop/01_coding_dojo/04_C#/01_lang_fun/01_lan_essentials/MultiplicationTable/obj/Debug/netcoreapp2.2/MultiplicationTable.csproj.CoreCompileInputs.cache
+/Users/alex/Desktop/01_coding_dojo/04_C#/01_lang_fun/01_lan_essentials/MultiplicationTable/obj/Debug/netcoreapp2.2/MultiplicationTable.AssemblyInfoInputs.cache
+/Users/alex/Desktop/01_coding_dojo/04_C#/01_lang_fun/01_lan_essentials/MultiplicationTable/obj/Debug/netcoreapp2.2/MultiplicationTable.AssemblyInfo.cs
+/Users/alex/Desktop/01_coding_dojo/04_C#/01_lang_fun/01_lan_essentials/MultiplicationTable/obj/Debug/netcoreapp2.2/MultiplicationTable.dll
+/Users/alex/Desktop/01_coding_dojo/04_C#/01_lang_fun/01_lan_essentials/MultiplicationTable/obj/Debug/netcoreapp2.2/MultiplicationTable.pdb
