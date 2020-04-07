@@ -1,0 +1,11 @@
+/Users/alex/Desktop/01_coding_dojo/04_C#/01_lang_fun/01_lan_essentials/BoxingUnboxing/bin/Debug/netcoreapp2.2/BoxingUnboxing.deps.json
+/Users/alex/Desktop/01_coding_dojo/04_C#/01_lang_fun/01_lan_essentials/BoxingUnboxing/bin/Debug/netcoreapp2.2/BoxingUnboxing.runtimeconfig.json
+/Users/alex/Desktop/01_coding_dojo/04_C#/01_lang_fun/01_lan_essentials/BoxingUnboxing/bin/Debug/netcoreapp2.2/BoxingUnboxing.runtimeconfig.dev.json
+/Users/alex/Desktop/01_coding_dojo/04_C#/01_lang_fun/01_lan_essentials/BoxingUnboxing/bin/Debug/netcoreapp2.2/BoxingUnboxing.dll
+/Users/alex/Desktop/01_coding_dojo/04_C#/01_lang_fun/01_lan_essentials/BoxingUnboxing/bin/Debug/netcoreapp2.2/BoxingUnboxing.pdb
+/Users/alex/Desktop/01_coding_dojo/04_C#/01_lang_fun/01_lan_essentials/BoxingUnboxing/obj/Debug/netcoreapp2.2/BoxingUnboxing.csprojAssemblyReference.cache
+/Users/alex/Desktop/01_coding_dojo/04_C#/01_lang_fun/01_lan_essentials/BoxingUnboxing/obj/Debug/netcoreapp2.2/BoxingUnboxing.csproj.CoreCompileInputs.cache
+/Users/alex/Desktop/01_coding_dojo/04_C#/01_lang_fun/01_lan_essentials/BoxingUnboxing/obj/Debug/netcoreapp2.2/BoxingUnboxing.AssemblyInfoInputs.cache
+/Users/alex/Desktop/01_coding_dojo/04_C#/01_lang_fun/01_lan_essentials/BoxingUnboxing/obj/Debug/netcoreapp2.2/BoxingUnboxing.AssemblyInfo.cs
+/Users/alex/Desktop/01_coding_dojo/04_C#/01_lang_fun/01_lan_essentials/BoxingUnboxing/obj/Debug/netcoreapp2.2/BoxingUnboxing.dll
+/Users/alex/Desktop/01_coding_dojo/04_C#/01_lang_fun/01_lan_essentials/BoxingUnboxing/obj/Debug/netcoreapp2.2/BoxingUnboxing.pdb
