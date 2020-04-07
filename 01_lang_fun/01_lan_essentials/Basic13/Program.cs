@@ -72,10 +72,14 @@ namespace Basic13
         public static int[] OddArray()
         {
             //creates and returns array of odd ints 1 to 255
-            int[] odds = { };
-            for (int i = 1; i < 256; i++)
+            int[] odds = new int[128];
+            int oddCount = 1;
+            for (int i = 0; i <= 127; i++)
             {
+                odds[i] = oddCount;
+                oddCount += 2;
             }
+            Console.WriteLine(string.Join(", ", odds));
             return odds;
         }
 
@@ -173,46 +177,46 @@ namespace Basic13
 
         static void Main(string[] args)
         {
-            PrintNumbers();
-            PrintOdds();
-            PrintSum();
+            // PrintNumbers();
+            // PrintOdds();
+            // PrintSum();
             int[] numbers = { 1, 2, 3, 4, 5 };
             int[] numbers2 = { 0, 4, 6, -2, -8, 33 };
             int[] numbers3 = { -4, -66, -1, -9 };
             int[] numbers4 = { 0, 0, 0 };
-            LoopArray(numbers);
-            Console.WriteLine(FindMax(numbers));
-            Console.WriteLine(FindMax(numbers2));
-            Console.WriteLine(FindMax(numbers3));
-            Console.WriteLine(FindMax(numbers4));
-            GetAverage(numbers);
-            GetAverage(numbers2);
-            GetAverage(numbers3);
-            GetAverage(numbers4);
-            Console.WriteLine(OddArray());
-            Console.WriteLine(GreaterThanY(numbers, 3));
-            Console.WriteLine(GreaterThanY(numbers2, 8));
-            Console.WriteLine(GreaterThanY(numbers3, -8));
-            SquareArrayValues(numbers);
-            SquareArrayValues(numbers2);
-            SquareArrayValues(numbers3);
-            SquareArrayValues(numbers4);
-            EliminateNegatives(numbers);
-            EliminateNegatives(numbers2);
-            EliminateNegatives(numbers3);
-            EliminateNegatives(numbers4);
-            MinMaxAverage(numbers);
-            MinMaxAverage(numbers2);
-            MinMaxAverage(numbers3);
-            MinMaxAverage(numbers4);
-            ShiftValues(numbers);
-            ShiftValues(numbers2);
-            ShiftValues(numbers3);
-            ShiftValues(numbers4);
-            NumToString(numbers);
-            NumToString(numbers2);
-            NumToString(numbers3);
-            NumToString(numbers4);
+            // LoopArray(numbers);
+            // Console.WriteLine(FindMax(numbers));
+            // Console.WriteLine(FindMax(numbers2));
+            // Console.WriteLine(FindMax(numbers3));
+            // Console.WriteLine(FindMax(numbers4));
+            // GetAverage(numbers);
+            // GetAverage(numbers2);
+            // GetAverage(numbers3);
+            // GetAverage(numbers4);
+            OddArray();
+            // Console.WriteLine(GreaterThanY(numbers, 3));
+            // Console.WriteLine(GreaterThanY(numbers2, 8));
+            // Console.WriteLine(GreaterThanY(numbers3, -8));
+            // SquareArrayValues(numbers);
+            // SquareArrayValues(numbers2);
+            // SquareArrayValues(numbers3);
+            // SquareArrayValues(numbers4);
+            // EliminateNegatives(numbers);
+            // EliminateNegatives(numbers2);
+            // EliminateNegatives(numbers3);
+            // EliminateNegatives(numbers4);
+            // MinMaxAverage(numbers);
+            // MinMaxAverage(numbers2);
+            // MinMaxAverage(numbers3);
+            // MinMaxAverage(numbers4);
+            // ShiftValues(numbers);
+            // ShiftValues(numbers2);
+            // ShiftValues(numbers3);
+            // ShiftValues(numbers4);
+            // NumToString(numbers);
+            // NumToString(numbers2);
+            // NumToString(numbers3);
+            // NumToString(numbers4);
         }
     }
 }
