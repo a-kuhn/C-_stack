@@ -1,0 +1,11 @@
+/Users/alex/Desktop/01_coding_dojo/04_C#/01_lang_fun/02_OOP/HumanOOP/bin/Debug/netcoreapp2.2/HumanOOP.deps.json
+/Users/alex/Desktop/01_coding_dojo/04_C#/01_lang_fun/02_OOP/HumanOOP/bin/Debug/netcoreapp2.2/HumanOOP.runtimeconfig.json
+/Users/alex/Desktop/01_coding_dojo/04_C#/01_lang_fun/02_OOP/HumanOOP/bin/Debug/netcoreapp2.2/HumanOOP.runtimeconfig.dev.json
+/Users/alex/Desktop/01_coding_dojo/04_C#/01_lang_fun/02_OOP/HumanOOP/bin/Debug/netcoreapp2.2/HumanOOP.dll
+/Users/alex/Desktop/01_coding_dojo/04_C#/01_lang_fun/02_OOP/HumanOOP/bin/Debug/netcoreapp2.2/HumanOOP.pdb
+/Users/alex/Desktop/01_coding_dojo/04_C#/01_lang_fun/02_OOP/HumanOOP/obj/Debug/netcoreapp2.2/HumanOOP.csprojAssemblyReference.cache
+/Users/alex/Desktop/01_coding_dojo/04_C#/01_lang_fun/02_OOP/HumanOOP/obj/Debug/netcoreapp2.2/HumanOOP.csproj.CoreCompileInputs.cache
+/Users/alex/Desktop/01_coding_dojo/04_C#/01_lang_fun/02_OOP/HumanOOP/obj/Debug/netcoreapp2.2/HumanOOP.AssemblyInfoInputs.cache
+/Users/alex/Desktop/01_coding_dojo/04_C#/01_lang_fun/02_OOP/HumanOOP/obj/Debug/netcoreapp2.2/HumanOOP.AssemblyInfo.cs
+/Users/alex/Desktop/01_coding_dojo/04_C#/01_lang_fun/02_OOP/HumanOOP/obj/Debug/netcoreapp2.2/HumanOOP.dll
+/Users/alex/Desktop/01_coding_dojo/04_C#/01_lang_fun/02_OOP/HumanOOP/obj/Debug/netcoreapp2.2/HumanOOP.pdb
