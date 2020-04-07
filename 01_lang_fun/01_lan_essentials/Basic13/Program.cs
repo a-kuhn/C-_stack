@@ -73,6 +73,9 @@ namespace Basic13
         {
             //creates and returns array of odd ints 1 to 255
             int[] odds = { };
+            for (int i = 1; i < 256; i++)
+            {
+            }
             return odds;
         }
 
