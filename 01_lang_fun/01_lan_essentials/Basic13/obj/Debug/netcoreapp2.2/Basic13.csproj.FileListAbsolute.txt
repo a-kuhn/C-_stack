@@ -1,0 +1,11 @@
+/Users/alex/Desktop/01_coding_dojo/04_C#/01_lang_fun/01_lan_essentials/Basic13/bin/Debug/netcoreapp2.2/Basic13.deps.json
+/Users/alex/Desktop/01_coding_dojo/04_C#/01_lang_fun/01_lan_essentials/Basic13/bin/Debug/netcoreapp2.2/Basic13.runtimeconfig.json
+/Users/alex/Desktop/01_coding_dojo/04_C#/01_lang_fun/01_lan_essentials/Basic13/bin/Debug/netcoreapp2.2/Basic13.runtimeconfig.dev.json
+/Users/alex/Desktop/01_coding_dojo/04_C#/01_lang_fun/01_lan_essentials/Basic13/bin/Debug/netcoreapp2.2/Basic13.dll
+/Users/alex/Desktop/01_coding_dojo/04_C#/01_lang_fun/01_lan_essentials/Basic13/bin/Debug/netcoreapp2.2/Basic13.pdb
+/Users/alex/Desktop/01_coding_dojo/04_C#/01_lang_fun/01_lan_essentials/Basic13/obj/Debug/netcoreapp2.2/Basic13.csprojAssemblyReference.cache
+/Users/alex/Desktop/01_coding_dojo/04_C#/01_lang_fun/01_lan_essentials/Basic13/obj/Debug/netcoreapp2.2/Basic13.csproj.CoreCompileInputs.cache
+/Users/alex/Desktop/01_coding_dojo/04_C#/01_lang_fun/01_lan_essentials/Basic13/obj/Debug/netcoreapp2.2/Basic13.AssemblyInfoInputs.cache
+/Users/alex/Desktop/01_coding_dojo/04_C#/01_lang_fun/01_lan_essentials/Basic13/obj/Debug/netcoreapp2.2/Basic13.AssemblyInfo.cs
+/Users/alex/Desktop/01_coding_dojo/04_C#/01_lang_fun/01_lan_essentials/Basic13/obj/Debug/netcoreapp2.2/Basic13.dll
+/Users/alex/Desktop/01_coding_dojo/04_C#/01_lang_fun/01_lan_essentials/Basic13/obj/Debug/netcoreapp2.2/Basic13.pdb
