@@ -43,8 +43,8 @@ namespace HumanOOP
         public int Attack(Human target)
         {
             Console.WriteLine($"{Name} is attacking {target.Name}!");
-            int attackStrength = Strength * 5;
-            target.health -= attackStrength;
+            int damage = Strength * 5;
+            target.health -= damage;
             return target.Health;
         }
     }

@@ -1,0 +1,11 @@
+/Users/alex/Desktop/01_coding_dojo/04_C#/01_lang_fun/02_OOP/WizardNinjaSamurai/bin/Debug/netcoreapp2.2/WizardNinjaSamurai.deps.json
+/Users/alex/Desktop/01_coding_dojo/04_C#/01_lang_fun/02_OOP/WizardNinjaSamurai/bin/Debug/netcoreapp2.2/WizardNinjaSamurai.runtimeconfig.json
+/Users/alex/Desktop/01_coding_dojo/04_C#/01_lang_fun/02_OOP/WizardNinjaSamurai/bin/Debug/netcoreapp2.2/WizardNinjaSamurai.runtimeconfig.dev.json
+/Users/alex/Desktop/01_coding_dojo/04_C#/01_lang_fun/02_OOP/WizardNinjaSamurai/bin/Debug/netcoreapp2.2/WizardNinjaSamurai.dll
+/Users/alex/Desktop/01_coding_dojo/04_C#/01_lang_fun/02_OOP/WizardNinjaSamurai/bin/Debug/netcoreapp2.2/WizardNinjaSamurai.pdb
+/Users/alex/Desktop/01_coding_dojo/04_C#/01_lang_fun/02_OOP/WizardNinjaSamurai/obj/Debug/netcoreapp2.2/WizardNinjaSamurai.csprojAssemblyReference.cache
+/Users/alex/Desktop/01_coding_dojo/04_C#/01_lang_fun/02_OOP/WizardNinjaSamurai/obj/Debug/netcoreapp2.2/WizardNinjaSamurai.csproj.CoreCompileInputs.cache
+/Users/alex/Desktop/01_coding_dojo/04_C#/01_lang_fun/02_OOP/WizardNinjaSamurai/obj/Debug/netcoreapp2.2/WizardNinjaSamurai.AssemblyInfoInputs.cache
+/Users/alex/Desktop/01_coding_dojo/04_C#/01_lang_fun/02_OOP/WizardNinjaSamurai/obj/Debug/netcoreapp2.2/WizardNinjaSamurai.AssemblyInfo.cs
+/Users/alex/Desktop/01_coding_dojo/04_C#/01_lang_fun/02_OOP/WizardNinjaSamurai/obj/Debug/netcoreapp2.2/WizardNinjaSamurai.dll
+/Users/alex/Desktop/01_coding_dojo/04_C#/01_lang_fun/02_OOP/WizardNinjaSamurai/obj/Debug/netcoreapp2.2/WizardNinjaSamurai.pdb
