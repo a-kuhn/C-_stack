@@ -1,0 +1,11 @@
+/Users/alex/Desktop/01_coding_dojo/04_C#/01_lang_fun/02_OOP/DeckOfCards/bin/Debug/netcoreapp2.2/DeckOfCards.deps.json
+/Users/alex/Desktop/01_coding_dojo/04_C#/01_lang_fun/02_OOP/DeckOfCards/bin/Debug/netcoreapp2.2/DeckOfCards.runtimeconfig.json
+/Users/alex/Desktop/01_coding_dojo/04_C#/01_lang_fun/02_OOP/DeckOfCards/bin/Debug/netcoreapp2.2/DeckOfCards.runtimeconfig.dev.json
+/Users/alex/Desktop/01_coding_dojo/04_C#/01_lang_fun/02_OOP/DeckOfCards/bin/Debug/netcoreapp2.2/DeckOfCards.dll
+/Users/alex/Desktop/01_coding_dojo/04_C#/01_lang_fun/02_OOP/DeckOfCards/bin/Debug/netcoreapp2.2/DeckOfCards.pdb
+/Users/alex/Desktop/01_coding_dojo/04_C#/01_lang_fun/02_OOP/DeckOfCards/obj/Debug/netcoreapp2.2/DeckOfCards.csprojAssemblyReference.cache
+/Users/alex/Desktop/01_coding_dojo/04_C#/01_lang_fun/02_OOP/DeckOfCards/obj/Debug/netcoreapp2.2/DeckOfCards.csproj.CoreCompileInputs.cache
+/Users/alex/Desktop/01_coding_dojo/04_C#/01_lang_fun/02_OOP/DeckOfCards/obj/Debug/netcoreapp2.2/DeckOfCards.AssemblyInfoInputs.cache
+/Users/alex/Desktop/01_coding_dojo/04_C#/01_lang_fun/02_OOP/DeckOfCards/obj/Debug/netcoreapp2.2/DeckOfCards.AssemblyInfo.cs
+/Users/alex/Desktop/01_coding_dojo/04_C#/01_lang_fun/02_OOP/DeckOfCards/obj/Debug/netcoreapp2.2/DeckOfCards.dll
+/Users/alex/Desktop/01_coding_dojo/04_C#/01_lang_fun/02_OOP/DeckOfCards/obj/Debug/netcoreapp2.2/DeckOfCards.pdb
