@@ -12,3 +12,12 @@
 /Users/alex/Desktop/01_coding_dojo/04_C#/02_ASPNET_core/01_ASP_MVC_1/FirstASP/obj/Debug/netcoreapp2.2/FirstASP.RazorTargetAssemblyInfo.cache
 /Users/alex/Desktop/01_coding_dojo/04_C#/02_ASPNET_core/01_ASP_MVC_1/FirstASP/obj/Debug/netcoreapp2.2/FirstASP.dll
 /Users/alex/Desktop/01_coding_dojo/04_C#/02_ASPNET_core/01_ASP_MVC_1/FirstASP/obj/Debug/netcoreapp2.2/FirstASP.pdb
+/Users/alex/Desktop/01_coding_dojo/04_C#/02_ASPNET_core/01_ASP_MVC_1/FirstASP/bin/Debug/netcoreapp2.2/FirstASP.Views.dll
+/Users/alex/Desktop/01_coding_dojo/04_C#/02_ASPNET_core/01_ASP_MVC_1/FirstASP/bin/Debug/netcoreapp2.2/FirstASP.Views.pdb
+/Users/alex/Desktop/01_coding_dojo/04_C#/02_ASPNET_core/01_ASP_MVC_1/FirstASP/obj/Debug/netcoreapp2.2/FirstASP.TagHelpers.input.cache
+/Users/alex/Desktop/01_coding_dojo/04_C#/02_ASPNET_core/01_ASP_MVC_1/FirstASP/obj/Debug/netcoreapp2.2/FirstASP.TagHelpers.output.cache
+/Users/alex/Desktop/01_coding_dojo/04_C#/02_ASPNET_core/01_ASP_MVC_1/FirstASP/obj/Debug/netcoreapp2.2/FirstASP.RazorCoreGenerate.cache
+/Users/alex/Desktop/01_coding_dojo/04_C#/02_ASPNET_core/01_ASP_MVC_1/FirstASP/obj/Debug/netcoreapp2.2/Razor/Views/Hello/Index.g.cshtml.cs
+/Users/alex/Desktop/01_coding_dojo/04_C#/02_ASPNET_core/01_ASP_MVC_1/FirstASP/obj/Debug/netcoreapp2.2/FirstASP.RazorTargetAssemblyInfo.cs
+/Users/alex/Desktop/01_coding_dojo/04_C#/02_ASPNET_core/01_ASP_MVC_1/FirstASP/obj/Debug/netcoreapp2.2/FirstASP.Views.pdb
+/Users/alex/Desktop/01_coding_dojo/04_C#/02_ASPNET_core/01_ASP_MVC_1/FirstASP/obj/Debug/netcoreapp2.2/FirstASP.csproj.CopyComplete

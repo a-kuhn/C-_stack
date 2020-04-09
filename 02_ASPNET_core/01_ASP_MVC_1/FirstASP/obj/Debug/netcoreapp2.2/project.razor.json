@@ -2959,6 +2959,12 @@
     "CSharpLanguageVersion": 703
   },
   "RootNamespace": "FirstASP",
-  "Documents": [],
+  "Documents": [
+    {
+      "FilePath": "/Users/alex/Desktop/01_coding_dojo/04_C#/02_ASPNET_core/01_ASP_MVC_1/FirstASP/Views/Hello/Index.cshtml",
+      "TargetPath": "Views\\Hello\\Index.cshtml",
+      "FileKind": "mvc"
+    }
+  ],
   "SerializationFormat": "0.2"
 }
