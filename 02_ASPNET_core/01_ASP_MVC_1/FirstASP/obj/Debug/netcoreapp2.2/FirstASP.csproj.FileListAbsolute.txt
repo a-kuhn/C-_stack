@@ -1,0 +1,14 @@
+/Users/alex/Desktop/01_coding_dojo/04_C#/02_ASPNET_core/01_ASP_MVC_1/FirstASP/bin/Debug/netcoreapp2.2/FirstASP.deps.json
+/Users/alex/Desktop/01_coding_dojo/04_C#/02_ASPNET_core/01_ASP_MVC_1/FirstASP/bin/Debug/netcoreapp2.2/FirstASP.runtimeconfig.json
+/Users/alex/Desktop/01_coding_dojo/04_C#/02_ASPNET_core/01_ASP_MVC_1/FirstASP/bin/Debug/netcoreapp2.2/FirstASP.runtimeconfig.dev.json
+/Users/alex/Desktop/01_coding_dojo/04_C#/02_ASPNET_core/01_ASP_MVC_1/FirstASP/bin/Debug/netcoreapp2.2/FirstASP.dll
+/Users/alex/Desktop/01_coding_dojo/04_C#/02_ASPNET_core/01_ASP_MVC_1/FirstASP/bin/Debug/netcoreapp2.2/FirstASP.pdb
+/Users/alex/Desktop/01_coding_dojo/04_C#/02_ASPNET_core/01_ASP_MVC_1/FirstASP/obj/Debug/netcoreapp2.2/FirstASP.csprojAssemblyReference.cache
+/Users/alex/Desktop/01_coding_dojo/04_C#/02_ASPNET_core/01_ASP_MVC_1/FirstASP/obj/Debug/netcoreapp2.2/FirstASP.csproj.CoreCompileInputs.cache
+/Users/alex/Desktop/01_coding_dojo/04_C#/02_ASPNET_core/01_ASP_MVC_1/FirstASP/obj/Debug/netcoreapp2.2/FirstASP.RazorAssemblyInfo.cache
+/Users/alex/Desktop/01_coding_dojo/04_C#/02_ASPNET_core/01_ASP_MVC_1/FirstASP/obj/Debug/netcoreapp2.2/FirstASP.RazorAssemblyInfo.cs
+/Users/alex/Desktop/01_coding_dojo/04_C#/02_ASPNET_core/01_ASP_MVC_1/FirstASP/obj/Debug/netcoreapp2.2/FirstASP.AssemblyInfoInputs.cache
+/Users/alex/Desktop/01_coding_dojo/04_C#/02_ASPNET_core/01_ASP_MVC_1/FirstASP/obj/Debug/netcoreapp2.2/FirstASP.AssemblyInfo.cs
+/Users/alex/Desktop/01_coding_dojo/04_C#/02_ASPNET_core/01_ASP_MVC_1/FirstASP/obj/Debug/netcoreapp2.2/FirstASP.RazorTargetAssemblyInfo.cache
+/Users/alex/Desktop/01_coding_dojo/04_C#/02_ASPNET_core/01_ASP_MVC_1/FirstASP/obj/Debug/netcoreapp2.2/FirstASP.dll
+/Users/alex/Desktop/01_coding_dojo/04_C#/02_ASPNET_core/01_ASP_MVC_1/FirstASP/obj/Debug/netcoreapp2.2/FirstASP.pdb
