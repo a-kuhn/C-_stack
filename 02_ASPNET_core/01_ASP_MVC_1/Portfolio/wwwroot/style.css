@@ -1,0 +1,19 @@
+.m-20 {
+    margin: 20px;
+}
+
+.ol {
+    outline: 1px solid red;
+}
+
+.olb {
+    outline: 1px solid blue;
+}
+
+.d-inline {
+    display: inline-block;
+}
+
+.d-block {
+    display: block;
+}

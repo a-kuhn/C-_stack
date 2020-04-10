@@ -12,3 +12,14 @@
 /Users/alex/Desktop/01_coding_dojo/04_C#/02_ASPNET_core/01_ASP_MVC_1/Portfolio/obj/Debug/netcoreapp2.2/Portfolio.RazorTargetAssemblyInfo.cache
 /Users/alex/Desktop/01_coding_dojo/04_C#/02_ASPNET_core/01_ASP_MVC_1/Portfolio/obj/Debug/netcoreapp2.2/Portfolio.dll
 /Users/alex/Desktop/01_coding_dojo/04_C#/02_ASPNET_core/01_ASP_MVC_1/Portfolio/obj/Debug/netcoreapp2.2/Portfolio.pdb
+/Users/alex/Desktop/01_coding_dojo/04_C#/02_ASPNET_core/01_ASP_MVC_1/Portfolio/bin/Debug/netcoreapp2.2/Portfolio.Views.dll
+/Users/alex/Desktop/01_coding_dojo/04_C#/02_ASPNET_core/01_ASP_MVC_1/Portfolio/bin/Debug/netcoreapp2.2/Portfolio.Views.pdb
+/Users/alex/Desktop/01_coding_dojo/04_C#/02_ASPNET_core/01_ASP_MVC_1/Portfolio/obj/Debug/netcoreapp2.2/Portfolio.TagHelpers.input.cache
+/Users/alex/Desktop/01_coding_dojo/04_C#/02_ASPNET_core/01_ASP_MVC_1/Portfolio/obj/Debug/netcoreapp2.2/Portfolio.TagHelpers.output.cache
+/Users/alex/Desktop/01_coding_dojo/04_C#/02_ASPNET_core/01_ASP_MVC_1/Portfolio/obj/Debug/netcoreapp2.2/Portfolio.RazorCoreGenerate.cache
+/Users/alex/Desktop/01_coding_dojo/04_C#/02_ASPNET_core/01_ASP_MVC_1/Portfolio/obj/Debug/netcoreapp2.2/Razor/Views/BasicRoutes/Contact.g.cshtml.cs
+/Users/alex/Desktop/01_coding_dojo/04_C#/02_ASPNET_core/01_ASP_MVC_1/Portfolio/obj/Debug/netcoreapp2.2/Razor/Views/BasicRoutes/Index.g.cshtml.cs
+/Users/alex/Desktop/01_coding_dojo/04_C#/02_ASPNET_core/01_ASP_MVC_1/Portfolio/obj/Debug/netcoreapp2.2/Razor/Views/BasicRoutes/Projects.g.cshtml.cs
+/Users/alex/Desktop/01_coding_dojo/04_C#/02_ASPNET_core/01_ASP_MVC_1/Portfolio/obj/Debug/netcoreapp2.2/Portfolio.RazorTargetAssemblyInfo.cs
+/Users/alex/Desktop/01_coding_dojo/04_C#/02_ASPNET_core/01_ASP_MVC_1/Portfolio/obj/Debug/netcoreapp2.2/Portfolio.Views.pdb
+/Users/alex/Desktop/01_coding_dojo/04_C#/02_ASPNET_core/01_ASP_MVC_1/Portfolio/obj/Debug/netcoreapp2.2/Portfolio.csproj.CopyComplete

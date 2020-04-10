@@ -2959,6 +2959,22 @@
     "CSharpLanguageVersion": 703
   },
   "RootNamespace": "Portfolio",
-  "Documents": [],
+  "Documents": [
+    {
+      "FilePath": "/Users/alex/Desktop/01_coding_dojo/04_C#/02_ASPNET_core/01_ASP_MVC_1/Portfolio/Views/BasicRoutes/Contact.cshtml",
+      "TargetPath": "Views\\BasicRoutes\\Contact.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/alex/Desktop/01_coding_dojo/04_C#/02_ASPNET_core/01_ASP_MVC_1/Portfolio/Views/BasicRoutes/Index.cshtml",
+      "TargetPath": "Views\\BasicRoutes\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/alex/Desktop/01_coding_dojo/04_C#/02_ASPNET_core/01_ASP_MVC_1/Portfolio/Views/BasicRoutes/Projects.cshtml",
+      "TargetPath": "Views\\BasicRoutes\\Projects.cshtml",
+      "FileKind": "mvc"
+    }
+  ],
   "SerializationFormat": "0.2"
 }
