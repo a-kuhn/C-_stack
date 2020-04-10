@@ -1,0 +1,13 @@
+.main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.olb {
+    outline: 2px solid blue;
+}
+
+.black-border {
+    border: 3px solid black;
+}
