@@ -1,0 +1,17 @@
+.main-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.olb {
+    outline: 2px solid blue;
+}
+
+.black-border {
+    border: 3px solid black;
+}
+
+.underline {
+    text-decoration: underline;
+}
