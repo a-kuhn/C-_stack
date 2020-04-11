@@ -9,15 +9,10 @@
 </head>
 <body class="main-container">
     <h3 class="text-center my-5">The current time and date:</h1>
-    @{
-        DateTime CurrentTime = DateTime.Now;
-        string hoursMinutes = CurrentTime.ToString("t");
-        string date = CurrentTime.ToString("MMM d, yyyy");
-    }
     <div class="container d-flex flex-column align-items-center">
         <div class="black-border p-3">
-            <h1 class="text-center">@date</h1>
-            <h1 class="text-center">@hoursMinutes</h1>
+            <h1 class="text-center">@ViewBag.date</h1>
+            <h1 class="text-center">@ViewBag.hoursMinutes</h1>
         </div>
     </div>
 </body>
