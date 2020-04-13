@@ -1,3 +1,4 @@
+@model Survey
 
 <!DOCTYPE html>
 <html lang="en">
@@ -10,24 +11,25 @@
 </head>
 <body class="main-container">
     <h1 class="text-center">form view</h1>
-    @* <div class="container d-flex flex-column align-items-center"> *@
-    <form action="result" method="post" class="black-border form container d-flex flex-column align-items-center py-2">
+    <form asp-action="Result" asp-controller="Home" method="post" class="black-border form container d-flex flex-column align-items-center py-2">
 
         <div class="form-group row">
+            <span asp-validation-for="Name"></span>
             <div class="col">
-                <label for="DojoLocation" class="col">Name</label>
+                <label asp-for="DojoLocation" class="col">Name</label>
             </div>            
             <div class="col">
-                <input type="text" class="form-control" name="Name">
+                <input type="text" class="form-control" asp-for="Name">
             </div>
         </div>
 
         <div class="form-group row">
+            <span asp-validation-for="DojoLocation"></span>
             <div class="col">
-                <label for="DojoLocation" class="col">Dojo Location</label>
+                <label asp-for="DojoLocation" class="col">Dojo Location</label>
             </div>
             <div class="col">
-                <select name="DojoLocation" id="">
+                <select asp-for="DojoLocation" id="">
                     <option value="OC" selected>OC</option>
                     <option value="Oakland">Oakland</option>
                     <option value="San Jose">San Jose</option>
@@ -38,11 +40,12 @@
         </div>
 
         <div class="form-group row">
+            <span asp-validation-for="FavLang"></span>
             <div class="col">
-                <label for="FavLang" class="">Favorite Language</label>
+                <label asp-for="FavLang" class="">Favorite Language</label>
             </div>            
             <div class="col">
-                <select name="FavLang" id="">
+                <select asp-for="FavLang" id="">
                     <option value="C#" selected>C#</option>
                     <option value="JavaScript">JavaScript</option>
                     <option value="Python">Python</option>
@@ -52,9 +55,10 @@
         </div>
 
         <div class="form-group row">
+            <span asp-validation-for="Comment"></span>
             <div class="row">
-                <label for="Comment" class="col">Comment</label>
-                <input type="textarea" class="form-control" name="Comment">
+                <label asp-for="Comment" class="col">Comment</label>
+                <input type="textarea" class="form-control" asp-for="Comment">
             </div>
         </div>
 

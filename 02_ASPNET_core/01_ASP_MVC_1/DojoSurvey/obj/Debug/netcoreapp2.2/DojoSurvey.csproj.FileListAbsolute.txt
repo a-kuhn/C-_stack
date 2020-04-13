@@ -22,3 +22,4 @@
 /Users/alex/Desktop/01_coding_dojo/04_C#/02_ASPNET_core/01_ASP_MVC_1/DojoSurvey/obj/Debug/netcoreapp2.2/DojoSurvey.pdb
 /Users/alex/Desktop/01_coding_dojo/04_C#/02_ASPNET_core/01_ASP_MVC_1/DojoSurvey/obj/Debug/netcoreapp2.2/DojoSurvey.csproj.CopyComplete
 /Users/alex/Desktop/01_coding_dojo/04_C#/02_ASPNET_core/01_ASP_MVC_1/DojoSurvey/obj/Debug/netcoreapp2.2/Razor/Views/Home/Result.g.cshtml.cs
+/Users/alex/Desktop/01_coding_dojo/04_C#/02_ASPNET_core/01_ASP_MVC_1/DojoSurvey/obj/Debug/netcoreapp2.2/Razor/Views/_ViewImports.g.cshtml.cs
