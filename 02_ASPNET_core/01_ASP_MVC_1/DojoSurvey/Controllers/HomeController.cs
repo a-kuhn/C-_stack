@@ -1,5 +1,6 @@
 using System;
 using Microsoft.AspNetCore.Mvc;
+using DojoSurvey.Models;
 
 namespace DojoSurvey.Controllers
 {
@@ -13,14 +14,10 @@ namespace DojoSurvey.Controllers
         }
 
         [HttpPost("result")]
-        public IActionResult Result(string Name, string DojoLocation, string FavLang, string Comment)
+        public IActionResult Result(Survey survey)
         {
-            ViewBag.Name = Name;
-            ViewBag.DojoLocation = DojoLocation;
-            ViewBag.FavLang = FavLang;
-            ViewBag.Comment = Comment;
-
-            return View();
+            Survey newSurvey = new Survey(survey);
+            return View(newSurvey);
         }
 
     }

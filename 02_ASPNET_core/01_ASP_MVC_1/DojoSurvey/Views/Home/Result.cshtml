@@ -1,3 +1,6 @@
+@using DojoSurvey.Models
+@model Survey
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,31 +13,25 @@
 <body class="main-container">
 
     <div class="container black-border my-5">
-            @* 
-            ViewBag.Name = Name;
-            ViewBag.DojoLocation = DojoLocation;
-            ViewBag.FavLang = FavLang;
-            ViewBag.Comment = Comment; 
-            *@
         <h5 class="underline">Submitted Info:</h5>
         <div class="row">
             <p class="col">Name:</p>
-            <p class="col">@ViewBag.Name</p>
+            <p class="col">@Model.Name</p>
         </div>
 
         <div class="row">
             <p class="col">Dojo Location:</p>
-            <p class="col">@ViewBag.DojoLocation</p>
+            <p class="col">@Model.DojoLocation</p>
         </div>
 
         <div class="row">
             <p class="col">Favorite Language:</p>
-            <p class="col">@ViewBag.FavLang</p>
+            <p class="col">@Model.FavLang</p>
         </div>
 
         <div class="row">
             <p class="col">Comment:</p>
-            <p class="col">@ViewBag.Comment</p>
+            <p class="col">@Model.Comment</p>
         </div>
 
     <div class="d-flex justify-content-end">
