@@ -1,4 +1,6 @@
+using System;
 using System.ComponentModel.DataAnnotations;
+using FormSubmission.Validations;
 namespace FormSubmission.Models
 {
     public class User
@@ -14,6 +16,9 @@ namespace FormSubmission.Models
         [Required]
         [Range(0, 1000)]
         public int Age { get; set; }
+
+        [FutureDateAttribute]
+        public DateTime Birthday { get; set; }
 
         [Required]
         [EmailAddress]
