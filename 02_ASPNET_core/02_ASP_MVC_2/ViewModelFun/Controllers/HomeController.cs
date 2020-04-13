@@ -10,20 +10,65 @@ namespace ViewModelFun.Controllers
 {
     public class HomeController : Controller
     {
+        [HttpGet("")]
         public IActionResult Index()
         {
-            return View();
+            string lorem = "here is a message. here is a message. here is a message. here is a message. here is a message. here is a message. here is a message. here is a message. here is a message. here is a message. here is a message. here is a message. here is a message. here is a message. here is a message. here is a message. here is a message. here is a message. here is a message. here is a message. here is a message.";
+
+            return View("Index", lorem);
         }
 
-        public IActionResult Privacy()
+        [HttpGet("numbers")]
+        public IActionResult Numbers()
         {
-            return View();
+            int[] numbers = new int[]
+            {
+                1,2,3,10,43,5
+            };
+            return View(numbers);
         }
 
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
+        [HttpGet("user")]
+        public IActionResult UserDetail()
         {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+            User newUser = new User()
+            {
+                FirstName = "Buttercup",
+                LastName = "Kuhn"
+            };
+            return View(newUser);
         }
+
+        [HttpGet("users")]
+        public IActionResult Users()
+        {
+            User user1 = new User()
+            {
+                FirstName = "Buttercup",
+                LastName = "Kuhn"
+            };
+
+            User user2 = new User()
+            {
+                FirstName = "Mia",
+                LastName = "Buechler"
+            };
+
+            User user3 = new User()
+            {
+                FirstName = "Bubbles",
+                LastName = "Frost"
+            };
+
+            List<User> userList = new List<User>()
+            {
+                user1, user2, user3
+            };
+            return View(userList);
+        }
+
     }
+
+
 }
+
