@@ -14,10 +14,14 @@ namespace RandomPasscode.Controllers
         [HttpGet("")]
         public IActionResult Index()
         {
-            //create count for # of passcode generations
-            int count = 0;
-            HttpContext.Session.SetInt32("Count", count + 1);
-            int? codeCount = HttpContext.Session.GetInt32("Count");
+            if (HttpContext.Session.GetInt32("Count") == null)
+            {
+                //create count for # of passcode generations
+                HttpContext.Session.SetInt32("Count", 1);
+            }
+
+            int? count = HttpContext.Session.GetInt32("Count");
+            Console.WriteLine($"\n******\nSession Count: {count}");
 
             //generate a 14-char random passcode
             string chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
@@ -33,11 +37,30 @@ namespace RandomPasscode.Controllers
             string RandomPasscode = HttpContext.Session.GetString("RandomPasscode");
 
             //send session data to View
-            ViewBag.Count = codeCount;
+            ViewBag.Count = count;
             ViewBag.RandomPasscode = randPass;
 
             return View();
         }
 
+        [HttpGet("new")]
+        public IActionResult New()
+        {
+            int? count = HttpContext.Session.GetInt32("Count");
+            int newCount = (int)count;
+            newCount++;
+            HttpContext.Session.SetInt32("Count", newCount);
+            Console.WriteLine($"\n@@@@@@@@\nSession newCount: {newCount}\n");
+
+            return RedirectToAction("Index");
+        }
+
+        [HttpGet("reset")]
+        public IActionResult Reset()
+        {
+            HttpContext.Session.Clear();
+
+            return RedirectToAction("Index");
+        }
     }
 }
