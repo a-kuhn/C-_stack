@@ -1,0 +1,11 @@
+﻿.outline {
+  outline: 2px solid purple;
+}
+
+.d-inline-block {
+  display: inline-block;
+}
+
+.red-font {
+  color: red;
+}

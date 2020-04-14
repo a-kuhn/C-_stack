@@ -1,0 +1,48 @@
+@model RegUser
+<div class="container">
+    <h1>Register</h1>
+    <form action="register" method="post" class="outline form d-inline-flex">
+        <div class="col outline">
+            <div class="row outline">
+                <div class="form-group">
+                    <span class="red-font" asp-validation-for="RegFirstName"></span>
+                    <label asp-for="RegFirstName">First Name</label>
+                    <input type="text" asp-for="RegFirstName" id="">
+                </div>
+            </div>
+            <div class="row outline">
+                <div class="form-group">
+                    <span class="red-font" asp-validation-for="RegLastName"></span>
+                    <label asp-for="RegLastName">Last Name</label>
+                    <input type="text" asp-for="RegLastName" id="">
+                </div>
+            </div>
+            <div class="row outline">
+                <div class="form-group">
+                    <span class="red-font" asp-validation-for="RegEmail"></span>
+                    <label asp-for="RegEmail">Email</label>
+                    <input type="email" asp-for="RegEmail" id="">
+                </div>
+            </div>
+            <div class="row outline">
+                <button type="submit">Sign Up</button>
+            </div>
+        </div>
+        <div class="col outline">
+            <div class="row outline">
+                <div class="form-group">
+                    <span class="red-font" asp-validation-for="RegPassword"></span>
+                    <label asp-for="RegPassword">Password</label>
+                    <input type="password" asp-for="RegPassword" id="">
+                </div>
+            </div>
+            <div class="row outline">
+                <div class="form-group">
+                    <span class="red-font" asp-validation-for="RegPWConfirm"></span>
+                    <label asp-for="RegPWConfirm">Confirm Password</label>
+                    <input type="password" asp-for="RegPWConfirm" id="">
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
