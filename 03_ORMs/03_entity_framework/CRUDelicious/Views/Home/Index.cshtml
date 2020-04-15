@@ -1,0 +1,18 @@
+﻿@model List<Dish>;
+<div class="text-center">
+    <h1>Welcome to CRUDelicious</h1>
+    <div class="row d-flex justify-content-around">
+        <div>
+            <h3 class="d-inline-flex">Check out some recent dishes!</h3>
+            <hr>
+        </div>
+        <a href="">Add a Dish</a>
+    </div>
+
+    @{
+        foreach (Dish dish in Model)
+        {
+            <a href="">@dish.Name</a><span> by @dish.Chef</span>
+        }
+    }
+</div>
