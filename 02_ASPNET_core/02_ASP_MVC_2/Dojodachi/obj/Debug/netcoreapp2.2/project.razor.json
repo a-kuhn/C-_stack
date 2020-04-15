@@ -2961,6 +2961,11 @@
   "RootNamespace": "Dojodachi",
   "Documents": [
     {
+      "FilePath": "/Users/alex/Desktop/01_coding_dojo/04_C#/02_ASPNET_core/02_ASP_MVC_2/Dojodachi/Views/Home/DachiHealth.cshtml",
+      "TargetPath": "Views\\Home\\DachiHealth.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/Users/alex/Desktop/01_coding_dojo/04_C#/02_ASPNET_core/02_ASP_MVC_2/Dojodachi/Views/_ViewStart.cshtml",
       "TargetPath": "Views\\_ViewStart.cshtml",
       "FileKind": "mvc"

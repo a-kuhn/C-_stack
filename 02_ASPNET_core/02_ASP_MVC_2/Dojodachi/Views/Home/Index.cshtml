@@ -1,8 +1,30 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
-}
-
+﻿
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    @* load up health stats *@
+    <partial name="DachiHealth" />
+
+    @* load up img and reaction msg *@
+    <div class="bl-border p-4 mb-4">
+        @{ if(ViewBag.ActionMsg.StartsWith("Waffles and ice cream")){<img src="~/img/feed.jpeg" alt="reaction image">}
+        else if(ViewBag.ActionMsg.StartsWith("I love fetch!")){<img src="~/img/play.jpeg" alt="reaction image">}
+        else if(ViewBag.ActionMsg.StartsWith("money pleeaaseee")){<img src="~/img/work.jpeg" alt="reaction image">}
+        else if(ViewBag.ActionMsg.StartsWith("just taking")){<img src="~/img/sleep.jpeg" alt="reaction image">}
+        else {<img src="~/img/default.jpeg" alt="reaction image">}
+        }
+        
+        <p class="py-4">@ViewBag.ActionMsg</p>
+    </div>
+
+    @* action options should only display when !win && !lose *@
+    @{ if(ViewBag.ActionMsg != "Good job. Your dojodachi is dead." && ViewBag.ActionMsg != "Congratulations! You Won!"){
+    <div class="justify-content-around d-flex">
+        <a href="feed" class="btn-warning btn-lg">feed</a>
+        <a href="play" class="btn-success btn-lg">play</a>
+        <a href="work" class="btn-danger btn-lg">work</a>
+        <a href="sleep" class="btn-primary btn-lg">sleep</a>
+    </div>
+    }}
+
+    @* this should only display if win || lose conditions are met *@
+    <div><a href="restart" class="btn-secondary btn-lg">restart?</a></div>
 </div>
