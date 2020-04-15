@@ -1,0 +1,361 @@
+@{
+    ViewData["Title"] = "Level 1";
+}
+
+<div class="well">
+    <p>Using the SportsORM, complete all the following queries and show their results on Level1.cshtml.</p>
+    <ol>
+        <li>...all womens' leagues</li>
+        <li>...all leagues where sport is any type of hockey</li>
+        <li>...all leagues where sport is something OTHER THAN footballues</li>
+        <li>**** @ViewBag.AllNonFootballLeagues</li>
+        <li>...all leagues that call themselves "conferences"</li>
+        <li>...all leagues in the Atlantic region</li>
+        <li>...all teams based in Dallas</li>
+        <li>...all teams named the Raptors</li>
+        <li>...all teams whose location includes "City"</li>
+        <li>...all teams whose names begin with "T"</li>
+        <li>...all teams, ordered alphabetically by location</li>
+        <li>...all teams, ordered by team name in reversewBag.AllTeamsDescendingOrder</li>
+        <li>...every player with last name "Cooper"</li>
+        <li>...every player with first name "Joshua"</li>
+        <li>...every player with last name "Cooper" EXCEPT those with "Joshua" as the first name</li>
+        <li>...all players with first name "Alexander" OR first name "Wyatt"</li>
+    </ol>
+</div>
+
+<div>
+    <h2>AllWomensLeagues</h2>
+    <table class="table">
+        <tr>
+            <th>League ID</th>
+            <th>Name</th>
+            <th>Sport</th>
+        </tr>
+        
+        @{
+            foreach (var league in @ViewBag.AllWomensLeagues)
+            {
+                <tr>
+                    <td>@league.LeagueId</td>
+                    <td>@league.Name</td>
+                    <td>@league.Sport</td>
+                </tr>
+            }
+        }
+    </table>
+</div>
+
+<div>
+    <h2>AllHockeyTypeLeagues</h2>
+    <table class="table">
+        <tr>
+            <th>League ID</th>
+            <th>Name</th>
+            <th>Sport</th>
+        </tr>
+        @{
+            foreach (var league in @ViewBag.AllHockeyTypeLeagues)
+            {
+                <tr>
+                    <td>@league.LeagueId</td>
+                    <td>@league.Name</td>
+                    <td>@league.Sport</td>
+                </tr>
+            }
+        }
+    </table>
+</div>
+
+<div>
+    <h2>AllNonFootballLeagues</h2>
+    <table class="table">
+        <tr>
+            <th>League ID</th>
+            <th>Name</th>
+            <th>Sport</th>
+        </tr>
+        @{
+            foreach (var league in @ViewBag.AllNonFootballLeagues)
+            {
+                <tr>
+                    <td>@league.LeagueId</td>
+                    <td>@league.Name</td>
+                    <td>@league.Sport</td>
+                </tr>
+            }
+        }
+    </table>
+</div>
+
+<div>
+<h2>AllConferenceLeagues</h2>
+    <table class="table">
+        <tr>
+            <th>League ID</th>
+            <th>Name</th>
+            <th>Sport</th>
+        </tr>
+        @{
+            foreach (var league in @ViewBag.AllConferenceLeagues)
+            {
+                <tr>
+                    <td>@league.LeagueId</td>
+                    <td>@league.Name</td>
+                    <td>@league.Sport</td>
+                </tr>
+            }
+        }
+    </table>
+</div>
+
+<div>
+    <h2>AllAtlanticLeagues</h2>
+    <table class="table">
+        <tr>
+            <th>League ID</th>
+            <th>Name</th>
+            <th>Sport</th>
+        </tr>
+        @{
+            foreach (var league in @ViewBag.AllAtlanticLeagues)
+            {
+                <tr>
+                    <td>@league.LeagueId</td>
+                    <td>@league.Name</td>
+                    <td>@league.Sport</td>
+                </tr>
+            }
+        }
+    </table>
+</div>
+
+<div>
+<h2>AllDallasTeams</h2>
+    <table class="table">
+        <tr>
+            <th>Team ID</th>
+            <th>Team Name</th>
+            <th>Location</th>
+            <th>Current League</th>
+        </tr>
+        @{
+            foreach (var team in @ViewBag.AllDallasTeams)
+            {
+                <tr>
+                    <td>@team.TeamId</td>
+                    <td>@team.TeamName</td>
+                    <td>@team.Location</td>
+                    <td>@team.CurrLeague.Name</td>
+                </tr>
+            }
+        }
+    </table>
+</div>
+
+<div>
+    <h2>AllRaptors</h2>
+    <table class="table">
+        <tr>
+            <th>Team ID</th>
+            <th>Team Name</th>
+            <th>Location</th>
+            <th>Current League</th>
+        </tr>
+        @{
+            foreach (var team in @ViewBag.AllRaptors)
+            {
+                <tr>
+                    <td>@team.TeamId</td>
+                    <td>@team.TeamName</td>
+                    <td>@team.Location</td>
+                    <td>@team.CurrLeague.Name</td>
+                </tr>
+            }
+        }
+    </table>
+</div>
+
+<div>
+    <h2>AllCityLocations</h2>
+    <table class="table">
+        <tr>
+            <th>Team ID</th>
+            <th>Team Name</th>
+            <th>Location</th>
+            <th>Current League</th>
+        </tr>
+        @{
+            foreach (var team in @ViewBag.AllCityLocations)
+            {
+                <tr>
+                    <td>@team.TeamId</td>
+                    <td>@team.TeamName</td>
+                    <td>@team.Location</td>
+                    <td>@team.CurrLeague.Name</td>
+                </tr>
+            }
+        }
+    </table>
+</div>
+
+<div>
+    <h2>AllTTeams</h2>
+    <table class="table">
+        <tr>
+            <th>Team ID</th>
+            <th>Team Name</th>
+            <th>Location</th>
+            <th>Current League</th>
+        </tr>
+        @{
+            foreach (var team in @ViewBag.AllTTeams)
+            {
+                <tr>
+                    <td>@team.TeamId</td>
+                    <td>@team.TeamName</td>
+                    <td>@team.Location</td>
+                    <td>@team.CurrLeague.Name</td>
+                </tr>
+            }
+        }
+    </table>
+</div>
+
+<div>
+    <h2>AllTeamsOrderedByLocation</h2>
+    <table class="table">
+        <tr>
+            <th>Team ID</th>
+            <th>Team Name</th>
+            <th>Location</th>
+            <th>Current League</th>
+        </tr>
+        @{
+            foreach (var team in @ViewBag.AllTeamsOrderedByLocation)
+            {
+                <tr>
+                    <td>@team.TeamId</td>
+                    <td>@team.TeamName</td>
+                    <td>@team.Location</td>
+                    <td>@team.CurrLeague.Name</td>
+                </tr>
+            }
+        }
+    </table>
+</div>
+
+<div>
+    <h2>AllTeamsDescendingOrder</h2>    
+    <table class="table">
+        <tr>
+            <th>Team ID</th>
+            <th>Team Name</th>
+            <th>Location</th>
+            <th>Current League</th>
+        </tr>
+        @{
+            foreach (var team in @ViewBag.AllTeamsDescendingOrder)
+            {
+                <tr>
+                    <td>@team.TeamId</td>
+                    <td>@team.TeamName</td>
+                    <td>@team.Location</td>
+                    <td>@team.CurrLeague.Name</td>
+                </tr>
+            }
+        }
+    </table>
+</div>
+
+<div>
+    <h2>AllPlayersCooper</h2>
+    <table class="table">
+        <tr>
+            <th>Player ID</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Current Team</th>
+        </tr>
+        @{
+            foreach (var player in @ViewBag.AllPlayersCooper)
+            {
+                <tr>
+                    <td>@player.PlayerId</td>
+                    <td>@player.FirstName</td>
+                    <td>@player.LastName</td>
+                    <td>@player.CurrentTeam.TeamName</td>
+                </tr>
+            }
+        }
+    </table>
+</div>
+
+<div>
+    <h2>AllPlayersJoshua</h2>
+    <table class="table">
+        <tr>
+            <th>Player ID</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Current Team</th>
+        </tr>
+        @{
+            foreach (var player in @ViewBag.AllPlayersJoshua)
+            {
+                <tr>
+                    <td>@player.PlayerId</td>
+                    <td>@player.FirstName</td>
+                    <td>@player.LastName</td>
+                    <td>@player.CurrentTeam.TeamName</td>
+                </tr>
+            }
+        }
+    </table>
+</div>
+
+<div>
+    <h2>AllPlayersCooperButNotJoshuaCoopers</h2>
+    <table class="table">
+        <tr>
+            <th>Player ID</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Current Team</th>
+        </tr>
+        @{
+            foreach (var player in @ViewBag.AllPlayersCooperButNotJoshuaCoopers)
+            {
+                <tr>
+                    <td>@player.PlayerId</td>
+                    <td>@player.FirstName</td>
+                    <td>@player.LastName</td>
+                    <td>@player.CurrentTeam.TeamName</td>
+                </tr>
+            }
+        }
+    </table>
+</div>
+
+<div>
+    <h2>AllAlexandersAndWyatts</h2>
+    <table class="table">
+        <tr>
+            <th>Player ID</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Current Team</th>
+        </tr>
+        @{
+            foreach (var player in @ViewBag.AllAlexandersAndWyatts)
+            {
+                <tr>
+                    <td>@player.PlayerId</td>
+                    <td>@player.FirstName</td>
+                    <td>@player.LastName</td>
+                    <td>@player.CurrentTeam.TeamName</td>
+                </tr>
+            }
+        }
+    </table>
+</div>
