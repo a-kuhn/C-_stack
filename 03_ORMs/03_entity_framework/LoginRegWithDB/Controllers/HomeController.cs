@@ -31,7 +31,7 @@ namespace LoginRegWithDB.Controllers
             int? userId = HttpContext.Session.GetInt32("UserId");
             if (userId == null)
             {
-                RedirectToAction("Index");
+                return RedirectToAction("Index");
             }
             return View("Success");
         }
