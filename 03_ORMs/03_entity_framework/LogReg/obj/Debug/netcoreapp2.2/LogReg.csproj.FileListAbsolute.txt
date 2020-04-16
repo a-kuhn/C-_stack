@@ -1,6 +1,0 @@
-/Users/alex/Desktop/01_coding_dojo/04_C#/03_ORMs/03_entity_framework/LogReg/obj/Debug/netcoreapp2.2/LogReg.csprojAssemblyReference.cache
-/Users/alex/Desktop/01_coding_dojo/04_C#/03_ORMs/03_entity_framework/LogReg/obj/Debug/netcoreapp2.2/LogReg.csproj.CoreCompileInputs.cache
-/Users/alex/Desktop/01_coding_dojo/04_C#/03_ORMs/03_entity_framework/LogReg/obj/Debug/netcoreapp2.2/LogReg.RazorAssemblyInfo.cache
-/Users/alex/Desktop/01_coding_dojo/04_C#/03_ORMs/03_entity_framework/LogReg/obj/Debug/netcoreapp2.2/LogReg.RazorAssemblyInfo.cs
-/Users/alex/Desktop/01_coding_dojo/04_C#/03_ORMs/03_entity_framework/LogReg/obj/Debug/netcoreapp2.2/LogReg.AssemblyInfoInputs.cache
-/Users/alex/Desktop/01_coding_dojo/04_C#/03_ORMs/03_entity_framework/LogReg/obj/Debug/netcoreapp2.2/LogReg.AssemblyInfo.cs
