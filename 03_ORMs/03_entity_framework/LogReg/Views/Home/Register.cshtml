@@ -1,0 +1,54 @@
+@model User
+
+<div>
+    <span class="h1">Login to this Cool Site!</span>
+    <a href="login">Login</a>
+</div>
+
+<div class="container">
+    <h1>Register</h1>
+    <form action="register" method="post" class="outline form d-inline-flex">
+        <div class="col outline">
+            <div class="row outline">
+                <div class="form-group">
+                    <span class="red-font" asp-validation-for="FirstName"></span>
+                    <label asp-for="FirstName">First Name</label>
+                    <input type="text" asp-for="FirstName" id="">
+                </div>
+            </div>
+            <div class="row outline">
+                <div class="form-group">
+                    <span class="red-font" asp-validation-for="LastName"></span>
+                    <label asp-for="LastName">Last Name</label>
+                    <input type="text" asp-for="LastName" id="">
+                </div>
+            </div>
+            <div class="row outline">
+                <div class="form-group">
+                    <span class="red-font" asp-validation-for="Email"></span>
+                    <label asp-for="Email">Email</label>
+                    <input type="email" asp-for="Email" id="">
+                </div>
+            </div>
+            <div class="row outline">
+                <button type="submit">Sign Up Now</button>
+            </div>
+        </div>
+        <div class="col outline">
+            <div class="row outline">
+                <div class="form-group">
+                    <span class="red-font" asp-validation-for="Password"></span>
+                    <label asp-for="Password">Password</label>
+                    <input type="password" asp-for="Password" id="">
+                </div>
+            </div>
+            <div class="row outline">
+                <div class="form-group">
+                    <span class="red-font" asp-validation-for="PWConfirm"></span>
+                    <label asp-for="PWConfirm">Confirm Password</label>
+                    <input type="password" asp-for="PWConfirm" id="">
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
