@@ -28,3 +28,6 @@
 /Users/alex/Desktop/01_coding_dojo/04_C#/03_ORMs/03_entity_framework/CRUDelicious/obj/Debug/netcoreapp2.2/CRUDelicious.dll
 /Users/alex/Desktop/01_coding_dojo/04_C#/03_ORMs/03_entity_framework/CRUDelicious/obj/Debug/netcoreapp2.2/CRUDelicious.pdb
 /Users/alex/Desktop/01_coding_dojo/04_C#/03_ORMs/03_entity_framework/CRUDelicious/obj/Debug/netcoreapp2.2/CRUDelicious.csproj.CopyComplete
+/Users/alex/Desktop/01_coding_dojo/04_C#/03_ORMs/03_entity_framework/CRUDelicious/obj/Debug/netcoreapp2.2/Razor/Views/Home/New.g.cshtml.cs
+/Users/alex/Desktop/01_coding_dojo/04_C#/03_ORMs/03_entity_framework/CRUDelicious/obj/Debug/netcoreapp2.2/Razor/Views/Home/Dish.g.cshtml.cs
+/Users/alex/Desktop/01_coding_dojo/04_C#/03_ORMs/03_entity_framework/CRUDelicious/obj/Debug/netcoreapp2.2/Razor/Views/Home/Edit.g.cshtml.cs

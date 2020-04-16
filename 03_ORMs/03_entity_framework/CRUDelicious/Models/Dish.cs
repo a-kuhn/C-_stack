@@ -6,8 +6,6 @@ namespace CRUDelicious.Models
     public class Dish
     {
         [Key]
-        [Required]
-        [MaxLength(11)]
         public int DishId { get; set; }
 
         [Required]
@@ -20,11 +18,9 @@ namespace CRUDelicious.Models
         public string Chef { get; set; }
 
         [Required]
-        [MaxLength(11)]
         public int Tastiness { get; set; }
 
         [Required]
-        [MaxLength(11)]
         public int Calories { get; set; }
 
         [Required]

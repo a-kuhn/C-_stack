@@ -1,18 +1,16 @@
 ﻿@model List<Dish>;
-<div class="text-center">
+<div class="container text-center">
     <h1>Welcome to CRUDelicious</h1>
-    <div class="row d-flex justify-content-around">
-        <div>
-            <h3 class="d-inline-flex">Check out some recent dishes!</h3>
-            <hr>
-        </div>
-        <a href="">Add a Dish</a>
-    </div>
+    <h3 class="d-inline-flex">Check out some recent dishes!</h3>
+    <hr>
+    <a href="/new" class="btn-lg btn-warning mb-4 p-3 d-flex">Add a Dish</a>
 
     @{
         foreach (Dish dish in Model)
         {
-            <a href="">@dish.Name</a><span> by @dish.Chef</span>
+            <div class="text-center mt-2 p-2">
+                <a href="/@dish.DishId">@dish.Name</a><span> by @dish.Chef</span>
+            </div>
         }
     }
 </div>
