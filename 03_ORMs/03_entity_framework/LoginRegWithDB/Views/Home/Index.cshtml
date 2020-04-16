@@ -1,0 +1,48 @@
+﻿@model User
+<div class="container">
+    <h1>Register to this cool site! <a href="login">Login</a> </h1>
+    <form action="register" method="post" class="outline form d-inline-flex">
+        <div class="col outline">
+            <div class="row outline">
+                <div class="form-group">
+                    <label asp-for="FirstName">First Name</label>
+                    <span class="red-font" asp-validation-for="FirstName"></span>
+                    <input type="text" asp-for="FirstName" id="">
+                </div>
+            </div>
+            <div class="row outline">
+                <div class="form-group">
+                    <label asp-for="LastName">Last Name</label>
+                    <span class="red-font" asp-validation-for="LastName"></span>
+                    <input type="text" asp-for="LastName" id="">
+                </div>
+            </div>
+            <div class="row outline">
+                <div class="form-group">
+                    <label asp-for="Email">Email</label>
+                    <span class="red-font" asp-validation-for="Email"></span>
+                    <input type="email" asp-for="Email" id="">
+                </div>
+            </div>
+            <div class="row outline">
+                <button type="submit">Sign Up Now</button>
+            </div>
+        </div>
+        <div class="col outline">
+            <div class="row outline">
+                <div class="form-group">
+                    <label asp-for="Password">Password</label>
+                    <span class="red-font" asp-validation-for="Password"></span>
+                    <input type="password" asp-for="Password" id="">
+                </div>
+            </div>
+            <div class="row outline">
+                <div class="form-group">
+                    <label asp-for="PWConfirm">Confirm Password</label>
+                    <span class="red-font" asp-validation-for="PWConfirm"></span>
+                    <input type="password" asp-for="PWConfirm" id="">
+                </div>
+            </div>
+        </div>
+    </form>
+</div>

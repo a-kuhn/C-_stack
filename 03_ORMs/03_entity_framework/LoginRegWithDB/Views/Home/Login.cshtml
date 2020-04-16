@@ -1,0 +1,25 @@
+@model LoginUser
+<div class="container">
+    <h1>Login to this cool site! <a href="/">Register</a> </h1>
+    <form action="loginUser" method="post" class="outline form d-inline-flex">
+        <div class="col">
+            <div class="row outline">
+                <div class="form-group">
+                    <label asp-for="LoginEmail">Email</label>
+                    <span class="red-font" asp-validation-for="LoginEmail"></span>
+                    <input type="email" asp-for="LoginEmail" id="">
+                </div>
+            </div>
+            <div class="row outline">
+                <div class="form-group">
+                    <label asp-for="LoginPassword">Password</label>
+                    <span class="red-font" asp-validation-for="LoginPassword"></span>
+                    <input type="password" asp-for="LoginPassword" id="">
+                </div>
+            </div>
+            <div class="row outline">
+                <button type="submit">Login</button>
+            </div>
+        </div>
+    </form>
+</div>
