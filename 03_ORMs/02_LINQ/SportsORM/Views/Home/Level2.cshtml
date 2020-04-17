@@ -22,3 +22,229 @@
         <li>...all players and count of teams played for, sorted by the number of teams they've played for</li>
     </ol>
 </div>
+
+@* 
+for displaying League Queries
+
+<div>
+    <h2>AllNonFootballLeagues</h2>
+    <table class="table">
+        <tr>
+            <th>League ID</th>
+            <th>Name</th>
+            <th>Sport</th>
+        </tr>
+        @{
+            foreach (var league in @ViewBag.AllNonFootballLeagues)
+            {
+                <tr>
+                    <td>@league.LeagueId</td>
+                    <td>@league.Name</td>
+                    <td>@league.Sport</td>
+                </tr>
+            }
+        }
+    </table>
+</div> 
+*@
+
+@* 
+for displaying Team Queries 
+
+<div>
+    <h2>AllRaptors</h2>
+    <table class="table">
+        <tr>
+            <th>Team ID</th>
+            <th>Team Name</th>
+            <th>Location</th>
+            <th>Current League</th>
+        </tr>
+        @{
+            foreach (var team in @ViewBag.AllRaptors)
+            {
+                <tr>
+                    <td>@team.TeamId</td>
+                    <td>@team.TeamName</td>
+                    <td>@team.Location</td>
+                    <td>@team.CurrLeague.Name</td>
+                </tr>
+            }
+        }
+    </table>
+</div> 
+*@
+
+@*
+for displaying Player Queries
+
+<div>
+    <h2>AllPlayersCooperButNotJoshuaCoopers</h2>
+    <table class="table">
+        <tr>
+            <th>Player ID</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Current Team</th>
+        </tr>
+        @{
+            foreach (var player in @ViewBag.AllPlayersCooperButNotJoshuaCoopers)
+            {
+                <tr>
+                    <td>@player.PlayerId</td>
+                    <td>@player.FirstName</td>
+                    <td>@player.LastName</td>
+                    <td>@player.CurrentTeam.TeamName</td>
+                </tr>
+            }
+        }
+    </table>
+</div>
+
+*@
+
+<div>
+    <h2>AllAtlanticSoccerConferenceTeams</h2>
+    <table class="table">
+        <tr>
+            <th>Team ID</th>
+            <th>Team Name</th>
+            <th>Location</th>
+            <th>Current League</th>
+        </tr>
+        @{
+            foreach (var team in @ViewBag.AllAtlanticSoccerConferenceTeams)
+            {
+                <tr>
+                    <td>@team.TeamId</td>
+                    <td>@team.TeamName</td>
+                    <td>@team.Location</td>
+                    <td>@team.CurrLeague.Name</td>
+                </tr>
+            }
+        }
+    </table>
+</div> 
+
+<div>
+    <h2>AllCurrPenguinsPlayers</h2>
+    <h5 class="text-danger">revisit -- there must be more than 2 players on the penguins</h5>
+    <table class="table">
+        <tr>
+            <th>Player ID</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Current Team</th>
+        </tr>
+        @{
+            foreach (var player in @ViewBag.AllCurrPenguinsPlayers)
+            {
+                <tr>
+                    <td>@player.PlayerId</td>
+                    <td>@player.FirstName</td>
+                    <td>@player.LastName</td>
+                    <td>@player.CurrentTeam.TeamName</td>
+                </tr>
+            }
+        }
+    </table>
+</div>
+
+<div>
+    <h2>AllPlayersInICBC</h2>
+    <table class="table">
+        <tr>
+            <th>Player ID</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Current Team</th>
+            <th>Current League</th>
+        </tr>
+        @{
+            foreach (var player in @ViewBag.AllPlayersInICBC)
+            {
+                <tr>
+                    <td>@player.PlayerId</td>
+                    <td>@player.FirstName</td>
+                    <td>@player.LastName</td>
+                    <td>@player.CurrentTeam.TeamName</td>
+                    <td>@player.CurrentTeam.CurrLeague.Name</td>
+                </tr>
+            }
+        }
+    </table>
+</div>
+
+<div>
+    <h2>LopezsInACAF</h2>
+    <h5 class="text-danger">checked full list of players in ACAF -- there are 0 Lopez's</h5>
+    <table class="table">
+        <tr>
+            <th>Player ID</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Current Team</th>
+            <th>Current League</th>
+        </tr>
+        @{
+            foreach (var player in @ViewBag.LopezsInACAF)
+            {
+                <tr>
+                    <td>@player.PlayerId</td>
+                    <td>@player.FirstName</td>
+                    <td>@player.LastName</td>
+                    <td>@player.CurrentTeam.TeamName</td>
+                    <td>@player.CurrentTeam.CurrLeague.Name</td>
+                </tr>
+            }
+        }
+    </table>
+</div>
+
+<div>
+    <h2>AllFootballPlayers</h2>
+    <table class="table">
+        <tr>
+            <th>Player ID</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Current Team</th>
+            <th>Sport</th>
+        </tr>
+        @{
+            foreach (var player in @ViewBag.AllFootballPlayers)
+            {
+                <tr>
+                    <td>@player.PlayerId</td>
+                    <td>@player.FirstName</td>
+                    <td>@player.LastName</td>
+                    <td>@player.CurrentTeam.TeamName</td>
+                    <td>@player.CurrentTeam.CurrLeague.Sport</td>
+                </tr>
+            }
+        }
+    </table>
+</div>
+
+<div>
+    <h2>AllTeamsWithACurrSophia</h2>
+    <table class="table">
+        <tr>
+            <th>Team ID</th>
+            <th>Team Name</th>
+            <th>Location</th>
+            <th>Current League</th>
+        </tr>
+        @{
+            foreach (var team in @ViewBag.AllTeamsWithACurrSophia)
+            {
+                <tr>
+                    <td>@team.TeamId</td>
+                    <td>@team.TeamName</td>
+                    <td>@team.Location</td>
+                    <td>@team.CurrLeague.Name</td>
+                </tr>
+            }
+        }
+    </table>
+</div> 
