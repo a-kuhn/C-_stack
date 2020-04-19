@@ -28,3 +28,6 @@
 /Users/alex/Desktop/01_coding_dojo/04_C#/03_ORMs/03_entity_framework/ChefsNDishes/obj/Debug/netcoreapp2.2/ChefsNDishes.dll
 /Users/alex/Desktop/01_coding_dojo/04_C#/03_ORMs/03_entity_framework/ChefsNDishes/obj/Debug/netcoreapp2.2/ChefsNDishes.pdb
 /Users/alex/Desktop/01_coding_dojo/04_C#/03_ORMs/03_entity_framework/ChefsNDishes/obj/Debug/netcoreapp2.2/ChefsNDishes.csproj.CopyComplete
+/Users/alex/Desktop/01_coding_dojo/04_C#/03_ORMs/03_entity_framework/ChefsNDishes/obj/Debug/netcoreapp2.2/Razor/Views/Dishes/Dishes.g.cshtml.cs
+/Users/alex/Desktop/01_coding_dojo/04_C#/03_ORMs/03_entity_framework/ChefsNDishes/obj/Debug/netcoreapp2.2/Razor/Views/Dishes/NewDish.g.cshtml.cs
+/Users/alex/Desktop/01_coding_dojo/04_C#/03_ORMs/03_entity_framework/ChefsNDishes/obj/Debug/netcoreapp2.2/Razor/Views/Home/NewChef.g.cshtml.cs

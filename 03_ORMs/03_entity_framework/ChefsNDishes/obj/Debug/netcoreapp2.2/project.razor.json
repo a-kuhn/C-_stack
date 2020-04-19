@@ -2976,6 +2976,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "/Users/alex/Desktop/01_coding_dojo/04_C#/03_ORMs/03_entity_framework/ChefsNDishes/Views/Dishes/Dishes.cshtml",
+      "TargetPath": "Views\\Dishes\\Dishes.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/Users/alex/Desktop/01_coding_dojo/04_C#/03_ORMs/03_entity_framework/ChefsNDishes/Views/Shared/_CookieConsentPartial.cshtml",
       "TargetPath": "Views\\Shared\\_CookieConsentPartial.cshtml",
       "FileKind": "mvc"
@@ -2993,6 +2998,16 @@
     {
       "FilePath": "/Users/alex/Desktop/01_coding_dojo/04_C#/03_ORMs/03_entity_framework/ChefsNDishes/Views/Shared/Error.cshtml",
       "TargetPath": "Views\\Shared\\Error.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/alex/Desktop/01_coding_dojo/04_C#/03_ORMs/03_entity_framework/ChefsNDishes/Views/Home/NewChef.cshtml",
+      "TargetPath": "Views\\Home\\NewChef.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/alex/Desktop/01_coding_dojo/04_C#/03_ORMs/03_entity_framework/ChefsNDishes/Views/Dishes/NewDish.cshtml",
+      "TargetPath": "Views\\Dishes\\NewDish.cshtml",
       "FileKind": "mvc"
     },
     {

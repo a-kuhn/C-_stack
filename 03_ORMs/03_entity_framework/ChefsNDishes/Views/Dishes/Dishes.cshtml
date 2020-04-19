@@ -1,0 +1,35 @@
+@model List<Dish>
+
+<div class="container">
+    <div class="col-10 text-center">
+        <h1>
+            <a asp-controller="Home" asp-action="Index" asp-route-index="/">Chefs</a>
+             | 
+            <a asp-controller="Dishes" asp-action="Dishes" asp-route-dishes="/dishes">Dishes</a>
+        </h1>
+    </div>
+    <div class="col-2">
+        <a asp-controller="Dishes" asp-action="NewDish" asp-route-new="/dishes/new">Add a Dish</a>
+    </div>
+</div>
+
+
+<h3>Yum, take a look at our tasty dishes!</h3>
+<hr>
+<table class="table">
+    <tr>
+        <th>Name</th>
+        <th>Chef</th>
+        <th>Tastiness</th>
+        <th>Calories</th>
+    </tr>
+    @{ foreach (Dish dish in Model){
+    <tr>
+        <td>@dish.Name</td>
+        <td>@dish.DishCreator.FirstName @dish.DishCreator.LastName</td>
+        <td>@dish.Tastiness</td>
+        <td>@dish.Calories</td>
+    </tr>
+    }
+    }
+</table>

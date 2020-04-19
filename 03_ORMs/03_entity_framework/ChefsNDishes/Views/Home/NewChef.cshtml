@@ -1,0 +1,39 @@
+@model Chef
+
+<a href="/">back to chefs</a>
+<a href="/dishes" class="px-4">back to dishes</a>
+
+<form asp-action="CreateChef" asp-controller="Home" method="post" class="black-border form container d-flex flex-column align-items-center py-2">
+
+    <div class="form-group row">
+        <span class="red-font" asp-validation-for="FirstName"></span>
+        <div class="col">
+            <label asp-for="FirstName" class="col">First Name</label>
+        </div>            
+        <div class="col">
+            <input type="text" class="form-control" asp-for="FirstName">
+        </div>
+    </div>
+
+    <div class="form-group row">
+        <span class="red-font" asp-validation-for="LastName"></span>
+        <div class="col">
+            <label asp-for="LastName" class="col">Last Name</label>
+        </div>            
+        <div class="col">
+            <input type="text" class="form-control" asp-for="LastName">
+        </div>
+    </div>
+
+    <div class="form-group row">
+        <span class="red-font" asp-validation-for="DoB"></span>
+        <div class="col">
+            <label asp-for="DoB" class="col">Date of Birth</label>
+        </div>            
+        <div class="col">
+            <input type="date" class="form-control" asp-for="DoB">
+        </div>
+    </div>
+
+    <button type="submit">Add Chef</button>
+</form>

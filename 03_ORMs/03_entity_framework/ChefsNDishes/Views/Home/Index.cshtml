@@ -1,8 +1,32 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
-}
+﻿@model List<Chef>;
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="container">
+    <div class="col-10 text-center">
+        <h1>
+            <a asp-controller="Home" asp-action="Index" asp-route-index="/">Chefs</a>
+             | 
+            <a asp-controller="Dishes" asp-action="Dishes" asp-route-dishes="/dishes">Dishes</a>
+        </h1>
+    </div>
+    <div class="col-2">
+        <a asp-controller="Home" asp-action="NewChef" asp-route-new="/new">Add a Chef</a>
+    </div>
 </div>
+
+<h3>Check out our roster of Chefs!</h3>
+<hr>
+<table class="table">
+    <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th># of Dishes</th>
+    </tr>
+    @{ foreach (Chef chef in Model){
+    <tr>
+        <td>@chef.FirstName @chef.LastName</td>
+        <td>@chef.Age()</td>
+        <td>@chef.ChefsDishes.Count</td>
+    </tr>
+    }
+    }
+</table>

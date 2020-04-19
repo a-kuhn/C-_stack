@@ -18,6 +18,8 @@ namespace ChefsNDishes.Models
         public string LastName { get; set; }
 
         [Required]
+        [FutureDate]
+        [MinAge]
         public DateTime DoB { get; set; }
 
         public DateTime CreatedAt { get; set; } = DateTime.Now;
@@ -25,5 +27,11 @@ namespace ChefsNDishes.Models
 
         public List<Dish> ChefsDishes { get; set; }
 
+
+        public int Age()
+        {
+            int age = (int.Parse(DateTime.Now.ToString("yyyyMMdd")) - int.Parse(DoB.ToString("yyyyMMdd"))) / 10000;
+            return age;
+        }
     }
 }

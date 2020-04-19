@@ -4,6 +4,9 @@ using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Http;
+using Microsoft.EntityFrameworkCore;
 using ChefsNDishes.Models;
 
 namespace ChefsNDishes.Controllers
@@ -15,20 +18,37 @@ namespace ChefsNDishes.Controllers
         {
             db = context;
         }
+        [HttpGet("")]
         public IActionResult Index()
         {
-            return View();
+            //load up all Chefs
+            List<Chef> allChefs = db.Chefs
+                .Include(c => c.ChefsDishes)
+                .ToList();
+            return View(allChefs);
         }
 
-        public IActionResult Privacy()
+        [HttpGet("new")]
+        public IActionResult NewChef()
         {
             return View();
         }
 
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
+        [HttpPost("create")]
+        public IActionResult CreateChef(Chef newChef)
         {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+            if (ModelState.IsValid == false)
+            {
+                return View("NewChef");
+            }
+
+            newChef.CreatedAt = DateTime.Now;
+            newChef.UpdatedAt = DateTime.Now;
+            db.Add(newChef);
+            db.SaveChanges();
+
+            return RedirectToAction("Index");
         }
+
     }
 }
