@@ -1,0 +1,30 @@
+@model Transaction
+
+@{
+    string Date(DateTime date)
+        {
+            return date.ToString("MMM dd yyyy");
+        }
+}
+
+<h1>Welcome, @ViewBag.User.FirstName @ViewBag.User.LastName</h1> <a href="logout">Logout</a>
+<p>Current balance: <span class="d-inline-flex bl-border">$@ViewBag.currBalance</span></p>
+<form action="NewTransaction" method="post">
+    <span class="text-danger" asp-validation-for="Amount"></span>
+    <label asp-for="Amount">Deposit/Withdraw</label>
+    <input type="double" asp-for="Amount">
+    <button type="submit" class="btn btn-secondary">Submit</button>
+</form>
+<table class="table">
+    <tr>
+        <th>Amount</th>
+        <th>Date</th>
+    </tr>
+    @{ foreach (Transaction transaction in @ViewBag.Transactions){
+    <tr>
+        <td>$@transaction.Amount</td>
+        <td>@Date(transaction.CreatedAt)</td>
+    </tr>
+    }
+    }
+</table>
