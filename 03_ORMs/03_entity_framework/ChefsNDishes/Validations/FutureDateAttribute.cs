@@ -15,7 +15,7 @@ namespace ChefsNDishes
             if (inputDate > CurrentTime)
             {
                 Console.WriteLine($"\n*************\n\ninputDate: {inputDate}");
-                return new ValidationResult("Chefs must be at least 18 years old.");
+                return new ValidationResult(" is invalid.");
             }
             else { return ValidationResult.Success; }
 

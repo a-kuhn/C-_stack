@@ -45,8 +45,6 @@ namespace ChefsNDishes.Controllers
                 return View("NewDish");
             }
 
-            newDish.CreatedAt = DateTime.Now;
-            newDish.UpdatedAt = DateTime.Now;
             db.Add(newDish);
             db.SaveChanges();
 

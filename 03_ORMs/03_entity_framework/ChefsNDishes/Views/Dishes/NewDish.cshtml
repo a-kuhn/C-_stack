@@ -47,10 +47,10 @@
             <label asp-for="DishCreator" class="col">Chef</label>
         </div>            
         <div class="col">
-            <select type="number" class="form-control" asp-for="DishCreator">
+            <select type="number" class="form-control" asp-for="ChefId">
                 @{foreach(Chef chef in @ViewBag.allChefs)
                 {
-                    <option value=@chef>@chef.FirstName @chef.LastName</option>
+                    <option value="@chef.ChefId">@chef.FirstName @chef.LastName</option>
                 }}
             </select>
         </div>

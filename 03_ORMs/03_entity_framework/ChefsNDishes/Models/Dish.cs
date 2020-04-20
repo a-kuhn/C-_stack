@@ -1,4 +1,6 @@
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+
 using System;
 
 namespace ChefsNDishes.Models
@@ -27,7 +29,9 @@ namespace ChefsNDishes.Models
         [Required]
         public DateTime UpdatedAt { get; set; } = DateTime.Now;
 
-        [Required]
         public Chef DishCreator { get; set; }
+
+        [Required]
+        public int ChefId { get; set; }
     }
 }
