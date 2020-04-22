@@ -1,0 +1,25 @@
+﻿@model Association
+
+<a asp-controller="Product" asp-action="Products" asp-route-categories="/products">All Products</a>
+
+<h1>**ViewBag.Category.Name</h1>
+
+<div class="d-inline-flex">
+    <h4>Products</h4>
+    @* <ul>
+    @{
+        foreach (Product prod in @ViewBag.Category.ProductsInCategory)
+        {<li>@prod.Name</li>}
+    }
+    </ul> *@
+</div>
+
+<div class="d-inline-flex">
+    <h6>Add Product</h6>
+    @* <form asp-action="CreateAssociation" asp-controller="Category" asp-action="post" class="form container d-flex flex-column align-items-center py-2">
+        @{foreach (Product prod in @ViewBag.AllCategories.ProductsInCategory){
+            <option value=@prod.ProductId>@prod.Name</option>
+        }}
+        <button type="submit">Add</button>
+    </form> *@
+</div>

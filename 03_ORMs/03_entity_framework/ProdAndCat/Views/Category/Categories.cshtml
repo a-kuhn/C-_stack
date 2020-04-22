@@ -1,0 +1,37 @@
+@model Category
+
+<div class="container">
+    <div class="col-10 text-center">
+        <h1>
+            <a asp-controller="Product" asp-action="Products">Products</a>
+             | 
+            <a asp-controller="Category" asp-action="Categories">Categories</a>
+        </h1>
+    </div>
+</div>
+
+<div class="d-inline-flex">
+    <h1>New Category</h1>
+    <form asp-action="Create" asp-controller="Category" asp-action="post" class="form container d-flex flex-column align-items-center py-2">
+        <div class="form-group row">
+            <span class="red-font" asp-validation-for="Name"></span>
+            <div class="col">
+                <label asp-for="Name" class="col">Name</label>
+            </div>            
+            <div class="col">
+                <input type="text" class="form-control" asp-for="Name">
+            </div>
+        </div>
+        <button type="submit">Create</button>
+    </form>
+</div>
+
+<div class="d-inline-flex">
+    <h1>Existing Categories</h1>
+    @{
+        foreach(Category cat in @ViewBag.AllCategories)
+        {
+            <a asp-controller="Category" asp-action="Category" asp-route-id="@cat.CategoryId">@cat.Name</a>
+        }
+    }
+</div>

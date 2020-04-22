@@ -1,0 +1,58 @@
+@model Product
+
+<div class="container">
+    <div class="col-10 text-center">
+        <h1>
+            <a asp-controller="Product" asp-action="Products">Products</a>
+             | 
+            <a asp-controller="Category" asp-action="Categories">Categories</a>
+        </h1>
+    </div>
+</div>
+
+<div class="d-inline-flex">
+    <h1>New Product</h1>
+    <form asp-action="Create" asp-controller="Product" asp-action="post" class="form container d-flex flex-column align-items-center py-2">
+        <div class="form-group row">
+            <span class="red-font" asp-validation-for="Name"></span>
+            <div class="col">
+                <label asp-for="Name" class="col">Name</label>
+            </div>            
+            <div class="col">
+                <input class="form-control" asp-for="Name">
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <span class="red-font" asp-validation-for="Desc"></span>
+            <div class="col">
+                <label asp-for="Desc" class="col">Description</label>
+            </div>            
+            <div class="col">
+                <input class="form-control" asp-for="Desc">
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <span class="red-font" asp-validation-for="Price"></span>
+            <div class="col">
+                <label asp-for="Price" class="col">Price</label>
+            </div>            
+            <div class="col">
+                <input class="form-control" asp-for="Price">
+            </div>
+        </div>
+
+        <button type="submit">Create</button>
+    </form>
+</div>
+
+<div class="d-inline-flex">
+    <h1>Existing Products</h1>
+    @{
+        foreach(Product prod in ViewBag.AllProducts)
+        {
+            <a asp-controller="Product" asp-action="Product" asp-route-ProductId="@prod.ProductId">@prod.Name</a>
+        }
+    }
+</div>
