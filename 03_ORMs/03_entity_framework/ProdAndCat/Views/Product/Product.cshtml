@@ -21,7 +21,7 @@
 <div class="d-inline-flex">
     <h6>Add Category</h6>
     <form asp-action="CreateAssociation" asp-controller="Product" asp-action="post" class="form container d-flex flex-column align-items-center py-2">
-        <input type="hidden" asp-for="ProductId" value="@ViewBag.selectedProduct.ProductId">
+        <input type="hidden" asp-for="Product" value="@ViewBag.selectedProduct">
         <select class="form-control" asp-for="CategoryId">
             @{foreach (Category c in @ViewBag.unassociatedProducts){
                 {
