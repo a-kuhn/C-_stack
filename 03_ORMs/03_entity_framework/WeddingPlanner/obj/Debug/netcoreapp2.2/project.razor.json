@@ -2971,6 +2971,21 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "/Users/alex/Desktop/01_coding_dojo/04_C#/03_ORMs/03_entity_framework/WeddingPlanner/Views/Home/Dashboard.cshtml",
+      "TargetPath": "Views\\Home\\Dashboard.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/alex/Desktop/01_coding_dojo/04_C#/03_ORMs/03_entity_framework/WeddingPlanner/Views/Home/_Register.cshtml",
+      "TargetPath": "Views\\Home\\_Register.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/alex/Desktop/01_coding_dojo/04_C#/03_ORMs/03_entity_framework/WeddingPlanner/Views/Home/_Login.cshtml",
+      "TargetPath": "Views\\Home\\_Login.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/Users/alex/Desktop/01_coding_dojo/04_C#/03_ORMs/03_entity_framework/WeddingPlanner/Views/Shared/_Layout.cshtml",
       "TargetPath": "Views\\Shared\\_Layout.cshtml",
       "FileKind": "mvc"
@@ -2986,6 +3001,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "/Users/alex/Desktop/01_coding_dojo/04_C#/03_ORMs/03_entity_framework/WeddingPlanner/Views/Home/NewWedding.cshtml",
+      "TargetPath": "Views\\Home\\NewWedding.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/Users/alex/Desktop/01_coding_dojo/04_C#/03_ORMs/03_entity_framework/WeddingPlanner/Views/Shared/_ValidationScriptsPartial.cshtml",
       "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "FileKind": "mvc"
@@ -2993,6 +3013,11 @@
     {
       "FilePath": "/Users/alex/Desktop/01_coding_dojo/04_C#/03_ORMs/03_entity_framework/WeddingPlanner/Views/Home/Privacy.cshtml",
       "TargetPath": "Views\\Home\\Privacy.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/alex/Desktop/01_coding_dojo/04_C#/03_ORMs/03_entity_framework/WeddingPlanner/Views/Home/Wedding.cshtml",
+      "TargetPath": "Views\\Home\\Wedding.cshtml",
       "FileKind": "mvc"
     },
     {
