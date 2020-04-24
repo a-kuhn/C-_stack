@@ -18,18 +18,23 @@ namespace ProdAndCat.Controllers
         }
 
         [HttpGet("")] //render category page
-        public IActionResult Category(int id)
+        public IActionResult Category(int CategoryId)
         {
             //load up all categories
             ViewBag.AllCategories = db.Categories
                 .Include(c => c.ProductsInCategory)
-                .ThenInclude(p => p.Category)
+                .ThenInclude(a => a.Product)
                 .ToList();
 
             ViewBag.Category = db.Categories
                 .Include(c => c.ProductsInCategory)
-                .ThenInclude(p => p.Category)
-                .FirstOrDefault(c => c.CategoryId == id);
+                .ThenInclude(a => a.Product)
+                .FirstOrDefault(c => c.CategoryId == CategoryId);
+
+            ViewBag.AllProducts = db.Products
+                .Include(p => p.CategoriesOfProduct)
+                .ThenInclude(a => a.Product)
+                .ToList();
 
             return View();
         }
@@ -60,14 +65,11 @@ namespace ProdAndCat.Controllers
         }
 
         [HttpPost("categories/createAssociation")] //create new Association
-        public IActionResult CreateAssociation(Product newProduct)
+        public IActionResult CreateAssociation(Association newAssociation)
         {
-            //create new association between cat.CategoryId and prod.ProductId
-            //change redirect to go back to category with newly-added product displayed
-
-            
-
-            return RedirectToAction("Categories");
+            db.Associations.Add(newAssociation);
+            db.SaveChanges();
+            return RedirectToAction("Category", new { CategoryId = newAssociation.CategoryId });
         }
     }
 }

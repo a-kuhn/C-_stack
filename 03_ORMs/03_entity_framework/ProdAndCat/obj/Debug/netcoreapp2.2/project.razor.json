@@ -2961,16 +2961,6 @@
   "RootNamespace": "ProdAndCat",
   "Documents": [
     {
-      "FilePath": "/Users/alex/Desktop/01_coding_dojo/04_C#/03_ORMs/03_entity_framework/ProdAndCat/Views/Home/Product.cshtml",
-      "TargetPath": "Views\\Home\\Product.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/alex/Desktop/01_coding_dojo/04_C#/03_ORMs/03_entity_framework/ProdAndCat/Views/Home/Products.cshtml",
-      "TargetPath": "Views\\Home\\Products.cshtml",
-      "FileKind": "mvc"
-    },
-    {
       "FilePath": "/Users/alex/Desktop/01_coding_dojo/04_C#/03_ORMs/03_entity_framework/ProdAndCat/Views/Shared/_Layout.cshtml",
       "TargetPath": "Views\\Shared\\_Layout.cshtml",
       "FileKind": "mvc"
@@ -2978,6 +2968,16 @@
     {
       "FilePath": "/Users/alex/Desktop/01_coding_dojo/04_C#/03_ORMs/03_entity_framework/ProdAndCat/Views/_ViewImports.cshtml",
       "TargetPath": "Views\\_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/alex/Desktop/01_coding_dojo/04_C#/03_ORMs/03_entity_framework/ProdAndCat/Views/Product/Privacy.cshtml",
+      "TargetPath": "Views\\Product\\Privacy.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/alex/Desktop/01_coding_dojo/04_C#/03_ORMs/03_entity_framework/ProdAndCat/Views/Product/Product.cshtml",
+      "TargetPath": "Views\\Product\\Product.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -3001,13 +3001,13 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/alex/Desktop/01_coding_dojo/04_C#/03_ORMs/03_entity_framework/ProdAndCat/Views/Home/Privacy.cshtml",
-      "TargetPath": "Views\\Home\\Privacy.cshtml",
+      "FilePath": "/Users/alex/Desktop/01_coding_dojo/04_C#/03_ORMs/03_entity_framework/ProdAndCat/Views/Category/Category.cshtml",
+      "TargetPath": "Views\\Category\\Category.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/alex/Desktop/01_coding_dojo/04_C#/03_ORMs/03_entity_framework/ProdAndCat/Views/Category/Category.cshtml",
-      "TargetPath": "Views\\Category\\Category.cshtml",
+      "FilePath": "/Users/alex/Desktop/01_coding_dojo/04_C#/03_ORMs/03_entity_framework/ProdAndCat/Views/Product/Products.cshtml",
+      "TargetPath": "Views\\Product\\Products.cshtml",
       "FileKind": "mvc"
     },
     {

@@ -31,21 +31,20 @@ namespace ProdAndCat.Controllers
         [HttpGet("products/{ProductId}")] //render single product
         public IActionResult Product(int ProductId)
         {
-            // List<Category> AllCategories = db.Categories
-            //     .Include(c => c.ProductsInCategory)
-            //     .ThenInclude(a => a.Product)
-            //     .ToList();
-            // ViewBag.AllCategories = AllCategories;
-
-            List<Category> unassociatedProducts = db.Categories
+            ViewBag.AllCategories = db.Categories
                 .Include(c => c.ProductsInCategory)
-                .ThenInclude(p => p.Product)
+                .ThenInclude(a => a.Product)
                 .ToList();
-            ViewBag.unassociatedProducts = unassociatedProducts;
 
-            Product selectedProd = db.Products
+            ViewBag.Product = db.Products
+                .Include(p => p.CategoriesOfProduct)
+                .ThenInclude(a => a.Category)
                 .FirstOrDefault(p => p.ProductId == ProductId);
-            ViewBag.selectedProd = selectedProd;
+
+            ViewBag.AllProducts = db.Products
+                .Include(p => p.CategoriesOfProduct)
+                .ThenInclude(a => a.Product)
+                .ToList();
 
             return View();
         }
@@ -65,19 +64,14 @@ namespace ProdAndCat.Controllers
             }
         }
 
+
         [HttpPost("products/createAssociation")] //create new Association
         public IActionResult CreateAssociation(Association newAssociation)
         {
-            //create new association between prod.ProductId and cat.CategoryId
-            //change redirect to go back to product with newly-added category displayed
-
-            Console.WriteLine($"newAssociation: {newAssociation}");
-            Console.WriteLine($"last stop before attempting to create new association in db");
-
-            db.Add(newAssociation);
+            db.Associations.Add(newAssociation);
             db.SaveChanges();
-
-            return RedirectToAction("Product", new {newAssociation.ProductId});
+            return RedirectToAction("Product", new { ProductId = newAssociation.ProductId });
         }
+
     }
 }

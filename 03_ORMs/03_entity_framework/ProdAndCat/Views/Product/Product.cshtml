@@ -1,34 +1,28 @@
-@* ViewBag.unassociatedProducts = unassociatedProducts; *@
-@* ViewBag.selectedProd = selectedProd; *@
 @model Association
 
 <a asp-controller="Category" asp-action="Categories" asp-route-categories="/categories">All Categories</a>
 
-<h1>@ViewBag.selectedProd.Name</h1>
+<h1>@ViewBag.Product.Name</h1>
 
 <div class="d-inline-flex">
     <h4>Categories</h4>
-    @{if (@ViewBag.selectedProd.CategoriesOfProduct != null){
-        <ul>
-            foreach (Association a in @ViewBag.selectedProd.CategoriesOfProduct)
-                {
-                    {<li>a.Category.Name</li>}
-                }
-        </ul>
-    }}
+    <ul>
+    @{
+        foreach (Association cat in @ViewBag.Product.CategoriesOfProduct)
+        {<li>@cat.Category.Name</li>}
+    }
+    </ul>
 </div>
 
 <div class="d-inline-flex">
     <h6>Add Category</h6>
     <form asp-action="CreateAssociation" asp-controller="Product" asp-action="post" class="form container d-flex flex-column align-items-center py-2">
-        <input type="hidden" asp-for="Product" value="@ViewBag.selectedProduct">
-        <select class="form-control" asp-for="CategoryId">
-            @{foreach (Category c in @ViewBag.unassociatedProducts){
-                {
-                    <option value=@c.CategoryId>@c.Name</option>
-                }
+        <select asp-for="CategoryId">
+            @{foreach (Category cat in @ViewBag.AllCategories){
+                <option value=@cat.CategoryId>@cat.Name</option>
             }}
         </select>
+        <input type="hidden" asp-for="ProductId" value="@ViewBag.Product.ProductId">
         <button type="submit">Add</button>
     </form>
 </div>

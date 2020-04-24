@@ -31,7 +31,7 @@
     @{
         foreach(Category cat in @ViewBag.AllCategories)
         {
-            <a asp-controller="Category" asp-action="Category" asp-route-id="@cat.CategoryId">@cat.Name</a>
+            <a asp-controller="Category" asp-action="Category" asp-route-CategoryId="@cat.CategoryId">@cat.Name</a>
         }
     }
 </div>
