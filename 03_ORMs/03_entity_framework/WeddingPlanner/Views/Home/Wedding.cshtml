@@ -1,1 +1,13 @@
-<h1>placeholder for wedding details page</h1>
+@model Wedding
+
+<h1>@Model.Wedder1 and @Model.Wedder2's Wedding <a href="/dashboard" class="mx-3">Dashboard</a> <a href="/logout" class="mx-3">Log Out</a></h1>
+
+<div class="container">
+    <h4>Date: @Model.Date</h4>
+    <h4>Guests:</h4>
+    <ul>
+        @{foreach (RSVP guest in @Model.Attendees)
+            {<li>@guest.User.FirstName @guest.User.LastName</li>}
+        }
+    </ul>
+</div>

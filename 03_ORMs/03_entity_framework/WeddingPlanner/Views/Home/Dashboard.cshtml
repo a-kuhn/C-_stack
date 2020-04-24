@@ -1,6 +1,7 @@
-@*what model needs to be here?? RSVP since the possible actions will be related to RSVP objects?*@
 @model RSVP
-<h1>Welcome to the Wedding Planner <a href="logout">Log Out</a></h1>
+
+
+<h1>Welcome to the Wedding Planner, @ViewBag.CurrUser.FirstName <a href="logout" class="px-4">Log Out</a></h1>
 
 <table class="table table-striped">
     <tr>
@@ -10,19 +11,47 @@
         <th>Action</th>
     </tr>
     @{foreach (Wedding wedding in @ViewBag.AllWeddings){
+        bool RSVPd = false;
+        bool creator = false;
+        if(wedding.CreatedBy == @ViewBag.CurrUser)
+            {
+                creator = true;
+            }
+        foreach (RSVP rsvp in wedding.Attendees)
+        {
+            if (rsvp.UserId == @ViewBag.CurrUser.UserId)
+            {
+                RSVPd = true;
+            }
+        }
         <tr>
-            <td>@wedding.Wedder1 & @wedding.Wedder2</td>
+            <td> <a asp-controller="Home" asp-action="Wedding" asp-route-WeddingId="@wedding.WeddingId">@wedding.Wedder1 & @wedding.Wedder2</a></td>
             <td>@wedding.Date</td>
             <td>@wedding.Attendees.Count</td>
-            <td>
-                <form asp-controller="Home" asp-action="CreateRSVP" method="post">
-                    <input type="hidden" asp-for="WeddingId" value="@wedding.WeddingId">
-                    <input type="hidden" asp-for="Wedding" value="@wedding">
-                    <button type="submit" class="btn btn-success">RSVP</button>
-                </form>
-                <a href="/DeleteRSVP/{@wedding.WeddingId}" class="btn btn-warning">un-RSVP</a>
-                <a href="/DeleteWedding/{@wedding.WeddingId}" class="btn btn-danger">Delete</a>
-            </td>
+            @{
+                if(creator)
+                {
+                    <td>
+                        <a asp-controller="Home" asp-action="DeleteWedding" asp-route-WeddingId="@wedding.WeddingId" class="btn btn-danger">Delete</a>
+                    </td>
+                }
+                else if (RSVPd)
+                {
+                    <td>
+                        <a asp-controller="Home" asp-action="DeleteRSVP" asp-route-WeddingId="@wedding.WeddingId" class="btn btn-warning">un-RSVP</a>
+                    </td>
+                }
+                else
+                {
+                    <td>    
+                        <form asp-controller="Home" asp-action="CreateRSVP" method="post">
+                            <input type="hidden" asp-for="WeddingId" value="@wedding.WeddingId">
+                            <input type="hidden" asp-for="Wedding" value="@wedding">
+                            <button type="submit" class="btn btn-success">RSVP</button>
+                        </form>
+                    </td>
+                }
+            }
         </tr>
     }}
 </table>

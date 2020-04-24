@@ -137,14 +137,18 @@ namespace WeddingPlanner.Controllers
             db.Weddings.Add(newWedding);
             db.SaveChanges();
 
-            return RedirectToAction("Dashboard");
+            return RedirectToAction("Wedding", new { WeddingId = newWedding.WeddingId });
         }
 
-        [HttpGet("Wedding")] //render wedding details view
-        public IActionResult Wedding()
+        [HttpGet("Wedding/{WeddingId}")] //render wedding details view
+        public IActionResult Wedding(int WeddingId)
         {
+            Wedding Wedding = db.Weddings
+                .Include(w => w.Attendees)
+                .ThenInclude(rsvp => rsvp.User)
+                .FirstOrDefault(w => w.WeddingId == WeddingId);
 
-            return View();
+            return View(Wedding);
         }
 
         [HttpPost("CreateRSVP")] //create RSVP, redirect to dashboard
@@ -160,19 +164,30 @@ namespace WeddingPlanner.Controllers
         }
 
         [HttpGet("DeleteRSVP/{WeddingId}")] //delete RSVP
-        public IActionResult DeleteRSVP(int WId)
+        public IActionResult DeleteRSVP(int WeddingId)
         {
             int? uid = HttpContext.Session.GetInt32("UserId");
             User currUser = db.Users.FirstOrDefault(u => u.UserId == (int)uid);
 
             //FIND && DELETE rsvp in db
             RSVP RSVPtoDelete = db.RSVPs
-                .Include(r => r.UserId)
-                .Include(r => r.WeddingId)
-                .Where(r => r.WeddingId == WId)
+                .Include(r => r.User)
+                .Include(r => r.Wedding)
+                .Where(r => r.WeddingId == WeddingId)
                 .FirstOrDefault(r => r.UserId == currUser.UserId);
 
             db.RSVPs.Remove(RSVPtoDelete);
+            db.SaveChanges();
+
+            return RedirectToAction("Dashboard");
+        }
+
+        [HttpGet("DeleteWedding/{WeddingId}")] //delete wedding, redirect to dashboard
+        public IActionResult DeleteWedding(int WeddingId)
+        {
+            Wedding WeddingToDelete = db.Weddings.FirstOrDefault(w => w.WeddingId == WeddingId);
+
+            db.Weddings.Remove(WeddingToDelete);
             db.SaveChanges();
 
             return RedirectToAction("Dashboard");
